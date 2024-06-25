@@ -100,7 +100,7 @@ export const sentences : { sentence: string,phonetic: string, translation: strin
       {
         "sentence": "An<span style=\"color:red;\">th</span>ropomorphizing creates fa<span style=\"color:red;\">m</span>iliarity and con<span style=\"color:red;\">n</span>ection but can also lead to con<span style=\"color:red;\">f</span>usion and misun<span style=\"color:red;\">d</span>erstanding.",
         "original": "Anthropomorphizing creates familiarity and connection but can also lead to confusion and misunderstanding.",
-        "translation": "拟人化创造了熟悉感和连接感，但也可能导致混淆和误解。",
+        "translation": "拟人化虽然可能导致混淆和误解，但是也创造了熟悉感和连接感。",
         "phonetic": "[ˌænθrəpəˈmɔːfaɪzɪŋ kriˈeɪts fəˈmɪljærɪti ənd kəˈnɛkʃən bʌt kæn ˈɔːlsəʊ liːd tə kənˈfjuːʒən ənd ˌmɪsʌndərˈstændɪŋ]"
       },
       {

@@ -1,9 +1,11 @@
-import { Button, List, Spin, Typography } from 'antd'
+import { Button, Card, List, Spin, Typography } from 'antd'
 import AudioPlayer from 'react-h5-audio-player';
 import 'react-h5-audio-player/lib/styles.css';
 import React, { useEffect, useRef, useState } from 'react'
 import { AudioOutlined, SoundOutlined } from '@ant-design/icons';
 const { Text } = Typography;
+
+const maxCount = 5 ;
 
 export default function Item({ label ,s, p, t, playing,  onPlayEnd, index }: any) {
 
@@ -13,6 +15,12 @@ export default function Item({ label ,s, p, t, playing,  onPlayEnd, index }: any
   const [isPlaying, setIsPlaying] = useState(false);
   const [isWaite, setIsWaite] = useState(false);
   const settimeRef = useRef<any>(null);
+  const myRef = useRef<any>(null);
+
+    // useEffect(() => {
+       
+    // }, []);
+
 
   useEffect(() => {
     if(!audioRef.current.currentTime && playing) {
@@ -34,6 +42,9 @@ export default function Item({ label ,s, p, t, playing,  onPlayEnd, index }: any
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const playAudio = () => {
     if (audioRef.current) {
+      if (myRef.current) {
+        myRef.current.scrollIntoView({ behavior: 'smooth' });
+       }
       timeRef.current = new Date().getTime();
       if (isPlaying) {
         if (settimeRef.current) {
@@ -71,7 +82,7 @@ export default function Item({ label ,s, p, t, playing,  onPlayEnd, index }: any
     // if (playCount < 3) {
       setIsWaite(true)
       settimeRef.current = setTimeout(() => {
-        if (playCount < 3) {
+        if (playCount < maxCount) {
           setIsWaite(false)
           timeRef.current = new Date().getTime();
           setPlayCount(playCount + 1);
@@ -100,17 +111,17 @@ export default function Item({ label ,s, p, t, playing,  onPlayEnd, index }: any
     setDuration(audioRef.current.duration);
   };
 
-  return <div>
+  return <Card className='!text-xl' ref={myRef}>
 
       <audio onEnded={handleEnded} onLoadedMetadata={handleLoadedMetadata} ref={audioRef} src={`/api/text?s=${s}`} />
-      <Button onClick={playAudio} type='text'>
-        <Text strong={isPlaying} > <div dangerouslySetInnerHTML={{__html : ((index + 1 ) + '.' + label)}}></div></Text>
-      </Button>
+      <div onClick={playAudio}>
+        <Text className='break-words break-all !text-xl' strong={isPlaying} > <div dangerouslySetInnerHTML={{__html : ((index + 1 ) + '.' + label)}}></div></Text>
+      </div>
 
-      <div className='ml-4'>{isPlaying && <Text>[{p}]</Text>}</div>
-      <div className='ml-4'>{isPlaying && <Text> ({t})</Text>}</div>
-      <p className='ml-4'> { isPlaying && (isWaite ? "已经" : "正在")}{isPlaying ? `播放第${playCount}/3次` : ""} {isPlaying && (isWaite ? <span><AudioOutlined ></AudioOutlined>跟读</span> : <SoundOutlined />)} {!!duration && (duration+ '秒')}</p>
+      <div className='ml-4 break-words break-all !text-xl'>{isPlaying && <div>[{p}]</div>}</div>
+      <div className='ml-4 break-words break-all !text-xl'>{isPlaying && <div> ({t})</div>}</div>
+      <p className='ml-4 break-words break-all !text-xl'> { isPlaying && (isWaite ? "已经" : "正在")}{isPlaying ? `播放第${playCount}/${maxCount}次` : ""} {isPlaying && (isWaite ? <span><AudioOutlined ></AudioOutlined>跟读</span> : <SoundOutlined />)} {!!duration && (duration+ '秒')}</p>
 
 
-  </div>
+  </Card>
 }
