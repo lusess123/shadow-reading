@@ -114,13 +114,27 @@ export default function Item({ label ,s, p, t, playing,  onPlayEnd, index }: any
   return <Card className='!text-xl' ref={myRef}>
 
       <audio onEnded={handleEnded} onLoadedMetadata={handleLoadedMetadata} ref={audioRef} src={`/api/text?s=${s}`} />
-      <div onClick={playAudio}>
+      <div onMouseUp={(e)=> {
+            var selectedText = window.getSelection().toString();
+           if(selectedText){
+            // alert(selectedText)
+            // 使用Web Speech API播放选中文本
+            var utterance = new SpeechSynthesisUtterance(selectedText);
+            speechSynthesis.speak(utterance);
+           }
+      }}>
         <Text className='break-words break-all !text-xl' strong={isPlaying} > <div dangerouslySetInnerHTML={{__html : ((index + 1 ) + '.' + label)}}></div></Text>
       </div>
-
-      <div className='ml-4 break-words break-all !text-xl'>{isPlaying && <div>[{p}]</div>}</div>
-      <div className='ml-4 break-words break-all !text-xl'>{isPlaying && <div> ({t})</div>}</div>
-      <p className='ml-4 break-words break-all !text-xl'> { isPlaying && (isWaite ? "已经" : "正在")}{isPlaying ? `播放第${playCount}/${maxCount}次` : ""} {isPlaying && (isWaite ? <span><AudioOutlined ></AudioOutlined>跟读</span> : <SoundOutlined />)} {!!duration && (duration+ '秒')}</p>
+      <div className='ml-4 break-words break-all !text-xl'>{ <div>[{p}]</div>}</div>
+      <div className='ml-4 break-words break-all !text-xl'>{ <div> ({t})</div>}</div>
+      <p className='ml-4 break-words break-all !text-xl'> { (isWaite ? "已经" : "正在")}{isPlaying ? `播放第${playCount}/${maxCount}次` : ""} {isPlaying && (isWaite ? <span><AudioOutlined ></AudioOutlined>跟读</span> : <SoundOutlined />)} {!!duration && (duration+ '秒')}
+      <Button onClick={playAudio} >播放</Button>
+      <Button onClick={()=>{
+        if (myRef.current) {
+          myRef.current.scrollIntoView({ behavior: 'smooth' });
+         }
+      }} >置顶</Button>
+      </p>
 
 
   </Card>

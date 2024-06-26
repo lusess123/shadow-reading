@@ -68,7 +68,7 @@ function Page() {
 
   const [playing, setPlaying] = useState("")
   return (
-    <div>
+    <div style={{height: '8000px'}}>
       <Button onClick={()=>{
           setPlaying(sentences[0].sentence)
          
