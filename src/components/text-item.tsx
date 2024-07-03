@@ -1,3 +1,4 @@
+'use cilent'
 import { Button, Card, List, Spin, Typography } from 'antd'
 import AudioPlayer from 'react-h5-audio-player';
 import 'react-h5-audio-player/lib/styles.css';
@@ -115,7 +116,8 @@ export default function Item({ label ,s, p, t, playing,  onPlayEnd, index }: any
 
       <audio onEnded={handleEnded} onLoadedMetadata={handleLoadedMetadata} ref={audioRef} src={`/api/text?s=${s}`} />
       <div onMouseUp={(e)=> {
-            var selectedText = window.getSelection().toString();
+           if(!window || !window.getSelection) return 
+            var selectedText = (window as any).getSelection().toString();
            if(selectedText){
             // alert(selectedText)
             // 使用Web Speech API播放选中文本

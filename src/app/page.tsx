@@ -4,67 +4,68 @@ import { sentences } from './sentence'
 import { List, Row ,Col, Button } from 'antd'
 import Item from '../components/text-item'
 
-let preventSleepInterval: any = null;
+// let preventSleepInterval: any = null;
 
-const preventSleep = () => {
-    if ('ontouchstart' in window) {
-        preventSleepInterval = setInterval(() => {
-            const event = new Event('touchstart');
-            window.dispatchEvent(event);
-        }, 30000); // 每30秒触发一次
-    }
-};
+// const preventSleep = () => {
+//   if(!window) return 
+//     if ('ontouchstart' in window) {
+//         preventSleepInterval = setInterval(() => {
+//             const event = new Event('touchstart');
+//             window.dispatchEvent(event);
+//         }, 30000); // 每30秒触发一次
+//     }
+// };
 
-const stopPreventSleep = () => {
-    if (preventSleepInterval) {
-        clearInterval(preventSleepInterval);
-    }
-};
+// const stopPreventSleep = () => {
+//     if (preventSleepInterval) {
+//         clearInterval(preventSleepInterval);
+//     }
+// };
 
 // document.getElementById('startPreventSleepButton').addEventListener('click', preventSleep);
 // document.getElementById('stopPreventSleepButton').addEventListener('click', stopPreventSleep);
 
 
-let wakeLock: any = null;
+// let wakeLock: any = null;
 
-        const requestWakeLock = async () => {
-            if ('wakeLock' in navigator) {
-                try {
-                    wakeLock = await navigator.wakeLock.request('screen');
-                    console.log('Wake Lock is active');
+        // const requestWakeLock = async () => {
+        //     if ('wakeLock' in navigator) {
+        //         try {
+        //             wakeLock = await navigator.wakeLock.request('screen');
+        //             console.log('Wake Lock is active');
                     
-                    wakeLock.addEventListener('release', () => {
-                        console.log('Wake Lock was released');
-                    });
-                } catch (err: any) {
-                    console.error(`${err.name}, ${err.message}`);
-                }
-            } else {
-                console.log('Wake Lock API not supported.');
-            }
-        };
-        preventSleep();
+        //             wakeLock.addEventListener('release', () => {
+        //                 console.log('Wake Lock was released');
+        //             });
+        //         } catch (err: any) {
+        //             console.error(`${err.name}, ${err.message}`);
+        //         }
+        //     } else {
+        //         console.log('Wake Lock API not supported.');
+        //     }
+        // };
+        // preventSleep();
 
-        const releaseWakeLock = async () => {
-            if (wakeLock !== null) {
-                await wakeLock.release();
-                wakeLock = null;
-                console.log('Wake Lock released manually');
-            }
-            stopPreventSleep();
-        };
+        // const releaseWakeLock = async () => {
+        //     if (wakeLock !== null) {
+        //         await wakeLock.release();
+        //         wakeLock = null;
+        //         console.log('Wake Lock released manually');
+        //     }
+        //     stopPreventSleep();
+        // };
 
 
 function Page() {
 
-  useEffect(()=>{
+  // useEffect(()=>{
 
-    requestWakeLock();
-    return ()=>{
-      releaseWakeLock();
-    }
+  //   requestWakeLock();
+  //   return ()=>{
+  //     releaseWakeLock();
+  //   }
 
-  } ,[])
+  // } ,[])
 
   const [playing, setPlaying] = useState("")
   return (
