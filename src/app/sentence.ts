@@ -15,6 +15,12 @@ export const sentences: {
       '[təˈdeɪ, aɪ wɒnt tə ʃeə sʌm kiː ˈɪnsaɪts frəm ðə bʊk "kəʊ-ɪnˈtɛlɪdʒəns: ˈlɪvɪŋ ənd ˈwɜːrkɪŋ wɪð eɪaɪ," ˈpʌblɪʃt ɪn ˈeɪprəl 2024]',
   },
   {
+    "sentence": "Co-I<span style=\"color:red;\">n</span>tellige<span style=\"color:red;\">n</span>ce mea<span style=\"color:red;\">n</span>s huma<span style=\"color:red;\">n</span>-machine collaborative i<span style=\"color:red;\">n</span>tellige<span style=\"color:red;\">n</span>ce. AI still ca<span style=\"color:red;\">n</span>'t fully replace huma<span style=\"color:red;\">n</span>s, so I believe that for a lo<span style=\"color:red;\">n</span>g time we will be i<span style=\"color:red;\">n</span> a era of huma<span style=\"color:red;\">n</span>-machine collaboratio<span style=\"color:red;\">n</span>.",
+    "original": "Co-Intelligence means human-machine collaborative intelligence. AI still can't fully replace humans, so I believe that for a long time we will be in an era of human-machine collaboration.",
+    "translation": "Co-Intelligence的意思是人机协同的智能，AI还无法完全取代人类，所以我认为很长一段时间内我们是处于人机协同的时代。",
+    "phonetic": "[kəʊ-ɪnˈtɛlɪʤəns miːnz ˈhjuːmən-məˈʃiːn kəˈlæbərətɪv ˌɪntɛlɪʤəns eɪ aɪ stɪl kæn t fʊli rɪˈpleɪs ˈhjuːmənz səʊ aɪ bɪˈliːv ðæt fɔːr ə lɒŋ taɪm wi wɪl bi ɪn ən ˈɪərə əv ˈhjuːmən-məˈʃiːn kəˈlæbərɪʃən]"
+  },  
+  {
     sentence:
       'This <span style="color:red;">b</span>ook quickly <span style="color:red;">b</span>ecame a <span style="color:red;">N</span>ew <span style="color:red;">Y</span>ork <span style="color:red;">T</span>imes <span style="color:red;">b</span>estseller.',
     original: "This book quickly became a New York Times bestseller.",
@@ -143,13 +149,10 @@ export const sentences: {
       "[ˈprɪnsəpəl θriː: triːt eɪaɪ laɪk ə ˈpɜːrsən (bʌt tɛl ɪt wɒt kaɪnd əv ˈpɜːrsən ɪt ɪz)]",
   },
   {
-    sentence:
-      'An<span style="color:red;">th</span>ropomorphizing lead to con<span style="color:red;">f</span>usion and misun<span style="color:red;">d</span>erstanding  but can also create fa<span style="color:red;">m</span>iliarity and con<span style="color:red;">n</span>ection.',
-    original:
-      "Anthropomorphizing leads to confusion and misunderstanding but can also create familiarity and connection.",
-    translation: "拟人化虽然可能导致混淆和误解，但是也创造了熟悉感和连接感。",
-    phonetic:
-      "[ˌænθrəpəˈmɔːfaɪzɪŋ kriˈeɪts fəˈmɪljærɪti ənd kəˈnɛkʃən bʌt kæn ˈɔːlsəʊ liːd tə kənˈfjuːʒən ənd ˌmɪsʌndərˈstændɪŋ]",
+    "sentence": "On one hand, compared to traditional software, AI software is indeed more huma<span style=\"color:red;\">n</span>-like. On the other hand, a<span style=\"color:red;\">n</span>thropomorphizi<span style=\"color:red;\">n</span>g, while it ca<span style=\"color:red;\">n</span> lead to co<span style=\"color:red;\">n</span>fusio<span style=\"color:red;\">n</span> a<span style=\"color:red;\">n</span>d misu<span style=\"color:red;\">n</span>dersta<span style=\"color:red;\">n</span>di<span style=\"color:red;\">n</span>g, also creates familia<span style=\"color:red;\">r</span>ity a<span style=\"color:red;\">n</span>d co<span style=\"color:red;\">n</span><span style=\"color:red;\">n</span>ectio<span style=\"color:red;\">n</span>.",
+    "original": "On one hand, compared to traditional software, AI software is indeed more human-like. On the other hand, anthropomorphizing, while it can lead to confusion and misunderstanding, also creates familiarity and connection.",
+    "translation": "一方面跟传统软件比起来，AI软件确实更像人。另一方面，拟人化虽然可能导致混淆和误解，但是也创造了熟悉感和连接感。",
+    "phonetic": "[ɒn wʌn hænd kəmˈpɛəd tə trəˈdɪʃənəl ˈsɒftwɛər eɪˈaɪ ˈsɒftwɛər z ɪnˈdiːd mɔː ˈhjuːmən laɪk ɒn ði ˈʌðə hænd ænθrəpəˈmɔːfaɪzɪŋ waɪl ɪt kæn liːd tə kənˈfjuːʒən ənd ˌmɪsʌndərˈstændɪŋ ˈɔːlsəʊ kriˈeɪts fəˈmɪljærɪti ənd kəˈnɛkʃən]"
   },
   {
     sentence:
