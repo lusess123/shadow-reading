@@ -5,7 +5,6 @@ COPY package*.json ./
 RUN npm config set registry https://registry.npmmirror.com/
 RUN npm ci 
 COPY . .
-RUN npx prisma generate
 RUN npm run build
 FROM node:18-alpine
 WORKDIR /app
