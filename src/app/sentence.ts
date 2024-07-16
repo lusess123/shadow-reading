@@ -3,6 +3,7 @@ export const sentences: {
   phonetic: string;
   translation: string;
   original: string;
+  delay?: number;
 }[] = [
   {
     sentence:
@@ -83,6 +84,7 @@ export const sentences: {
     original:
       "Try to involve AI in everything you do unless there are legal or ethical barriers.",
     translation: "尽量在你做的每件事中都让人工智能参与，除非有法律或道德障碍。",
+    delay: 1,
     phonetic:
       "[traɪ tə ɪnˈvɒlv eɪaɪ ɪn ˈɛvrɪθɪŋ ju du əˈnles ðɛər ɑːr ˈliːɡəl ɔːr ˈɛθɪkəl ˈbæriərz]",
   },
@@ -117,6 +119,7 @@ export const sentences: {
     original:
       "It highlights the importance of human judgment and expertise in operating complex systems.",
     translation: "它突显了在人类判断和专业知识在操作复杂系统中的重要性。",
+    delay: 1,
     phonetic:
       "[ɪt ˈhaɪlaɪts ði ɪmˈpɔːrtəns əv ˈhjuːmən ˈdʒʌdʒmənt ənd ˌɛkspərˈtiːz ɪn ˈɒpəreɪtɪŋ ˈkɒmpleks ˈsɪstəmz]",
   },
@@ -125,7 +128,8 @@ export const sentences: {
       'AI can hal<span style="color:red;">l</span>ucinate and <span style="color:red;">l</span>ie; if you in<span style="color:red;">s</span>istently ask AI about <span style="color:red;">s</span>omething it doesn\'t know, it <span style="color:red;">m</span>ight <span style="color:red;">f</span>abricate an <span style="color:red;">a</span>nswer because "<span style="color:red;">m</span>aking you <span style="color:red;">h</span>appy" takes <span style="color:red;">p</span>recedence over "<span style="color:red;">a</span>ccuracy."',
     original:
       'AI can hallucinate and lie; if you insistently ask AI about something it doesn\'t know, it might fabricate an answer because "making you happy" takes precedence over "accuracy."',
-    translation:
+      delay: 3,
+      translation:
       "人工智能会产生幻觉并撒谎；如果你执意问人工智能它不知道的东西，它可能会编造一个答案，因为“让你高兴”优先于“准确性”。",
     phonetic:
       '[eɪaɪ kæn həˈluːsɪneɪt ənd laɪ; ɪf ju ɪnˈsɪstəntli ɑːsk eɪaɪ əˈbaʊt ˈsʌmθɪŋ ɪt ˈdʌzənt nəʊ, ɪt maɪt ˈfæbrɪkeɪt ən ˈɑːnsər bɪˈkɔːz "ˈmeɪkɪŋ ju ˈhæpi" teɪks ˈprɛsɪdəns ˈəʊvər "ˈækjʊrəsi"]',
@@ -188,7 +192,8 @@ export const sentences: {
       'The author uses <span style="color:red;">m</span>etaphors such as <span style="color:red;">v</span>iewing AI as an <span style="color:red;">a</span>lien <span style="color:red;">p</span>resence rather than an <span style="color:red;">a</span>rtificial <span style="color:red;">m</span>achine or <span style="color:red;">i</span>magining AI as an <span style="color:red;">i</span>nfinitely fast intern, eager to <span style="color:red;">p</span>lease but prone to <span style="color:red;">d</span>istorting <span style="color:red;">f</span>acts.',
     original:
       "The author uses metaphors such as viewing AI as an alien presence rather than an artificial machine or imagining AI as an infinitely fast intern, eager to please but prone to distorting facts.",
-    translation:
+      delay: 3,
+      translation:
       "作者使用比喻，如将人工智能视为一种外星存在，而不是人工机器，或将人工智能想象成一个无限快的实习生，渴望取悦但容易扭曲事实。",
     phonetic:
       "[ði ˈɔːθər ˈjuːzɪz ˈmɛtəfɔːrz sʌtʃ əz ˈvjuːɪŋ eɪaɪ əz ən ˈeɪliən ˈprɛzəns ˈrɑːðər ðæn ən ˌɑːrtɪˈfɪʃəl məˈʃiːn ɔːr ɪˈmædʒɪnɪŋ eɪaɪ əz ən ˈɪnfɪnətli fɑːst ˈɪntɜːrn, ˈiːɡər tə pliːz bʌt prəʊn tə dɪˈstɔːrtɪŋ fækts]",
@@ -216,12 +221,14 @@ export const sentences: {
       'This <span style="color:red;">p</span>rinciple en<span style="color:red;">c</span>ourages us to view AI\'s <span style="color:red;">l</span>imitations as <span style="color:red;">t</span>emporary and re<span style="color:red;">m</span>ain open to new de<span style="color:red;">v</span>elopments.',
     original:
       "This principle encourages us to view AI's limitations as temporary and remain open to new developments.",
-    translation:
+      delay:2 ,
+      translation:
       "这一原则鼓励我们将人工智能的局限视为暂时的，并保持对新发展的开放态度。",
     phonetic:
       "[ðɪs ˈprɪnsəpəl ɪnˈkʌrɪdʒɪz ʌs tə vjuː eɪaɪz ˌlɪmɪˈteɪʃənz əz ˈtɛmpərəri ənd rɪˈmeɪn ˈəʊpən tə njuː dɪˈvɛləpmənts]",
   },
   {
+    delay: 1,
     sentence:
       'In con<span style="color:red;">cl</span>usion, un<span style="color:red;">d</span>erstanding and ap<span style="color:red;">pl</span>ying these <span style="color:red;">p</span>rinciples will help us <span style="color:red;">n</span>avigate our co<span style="color:red;">e</span>xistence with AI more ef<span style="color:red;">f</span>ectively, en<span style="color:red;">s</span>uring we <span style="color:red;">h</span>arness its <span style="color:red;">p</span>otential while re<span style="color:red;">m</span>aining <span style="color:red;">v</span>igilant about its <span style="color:red;">l</span>imitations.',
     original:

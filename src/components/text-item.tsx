@@ -6,9 +6,9 @@ import React, { useEffect, useRef, useState } from 'react'
 import { AudioOutlined, SoundOutlined } from '@ant-design/icons';
 const { Text } = Typography;
 
-const maxCount = 5 ;
+const maxCount = 0 ;
 
-export default function Item({ label ,s, p, t, playing,  onPlayEnd, index }: any) {
+export default function Item({ sound , delay,label ,s, p, t, playing,  onPlayEnd, index }: any) {
 
   const audioRef = useRef<any>(null);
   const [playCount, setPlayCount] = useState(0);
@@ -43,6 +43,8 @@ export default function Item({ label ,s, p, t, playing,  onPlayEnd, index }: any
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const playAudio = () => {
     if (audioRef.current) {
+      if(!sound)
+       audioRef.current.volume = 0.0;
       if (myRef.current) {
         myRef.current.scrollIntoView({ behavior: 'smooth' });
        }
@@ -96,7 +98,7 @@ export default function Item({ label ,s, p, t, playing,  onPlayEnd, index }: any
           if(onPlayEnd) onPlayEnd(index)
     
         }
-      }, time);
+      }, (delay || 0) * 1000 + 1000);
     // }
     // else {
     //   timeRef.current = 0 ;
@@ -114,7 +116,7 @@ export default function Item({ label ,s, p, t, playing,  onPlayEnd, index }: any
 
   return <Card className='!text-xl' ref={myRef}>
 
-      <audio onEnded={handleEnded} onLoadedMetadata={handleLoadedMetadata} ref={audioRef} src={`/api/text?s=${s}`} />
+      <audio  onEnded={handleEnded} onLoadedMetadata={handleLoadedMetadata} ref={audioRef} src={`/api/text?s=${s}`} />
       <div onMouseUp={(e)=> {
            if(!window || !window.getSelection) return 
             var selectedText = (window as any).getSelection().toString();
@@ -127,8 +129,8 @@ export default function Item({ label ,s, p, t, playing,  onPlayEnd, index }: any
       }}>
         <Text className='break-words break-all !text-xl' strong={isPlaying} > <div dangerouslySetInnerHTML={{__html : ((index + 1 ) + '.' + label)}}></div></Text>
       </div>
-      <div className='ml-4 break-words break-all !text-xl'>{ <div>[{p}]</div>}</div>
-      <div className='ml-4 break-words break-all !text-xl'>{ <div> ({t})</div>}</div>
+      {/* <div className='ml-4 break-words break-all !text-xl'>{ <div>[{p}]</div>}</div>
+      <div className='ml-4 break-words break-all !text-xl'>{ <div> ({t})</div>}</div> */}
       <p className='ml-4 break-words break-all !text-xl'> { (isWaite ? "已经" : "正在")}{isPlaying ? `播放第${playCount}/${maxCount}次` : ""} {isPlaying && (isWaite ? <span><AudioOutlined ></AudioOutlined>跟读</span> : <SoundOutlined />)} {!!duration && (duration+ '秒')}
       <Button onClick={playAudio} >播放</Button>
       <Button onClick={()=>{

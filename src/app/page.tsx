@@ -1,8 +1,9 @@
 'use client'
 import React, { useEffect, useRef, useState } from 'react'
 import { sentences } from './sentence'
-import { List, Row ,Col, Button } from 'antd'
+import { List, Row ,Col, Button, Space } from 'antd'
 import Item from '../components/text-item'
+import { AudioMutedOutlined, SoundOutlined } from '@ant-design/icons'
 
 // let preventSleepInterval: any = null;
 
@@ -68,19 +69,25 @@ function Page() {
   // } ,[])
 
   const [playing, setPlaying] = useState("")
+  const [sound, setSound] = useState(true)
   return (
     <div style={{height: '8000px'}}>
+      <Space className='w-full justify-center items-center p-4'>
       <Button onClick={()=>{
           setPlaying(sentences[0].sentence)
          
       }}>播放</Button>
+         <Button onClick={()=>{
+         setSound(!sound)
+         
+      }}>声音 {sound ? <SoundOutlined /> : <AudioMutedOutlined />}</Button></Space>
       { sentences.map((item, index) => {
         return     <Item  onPlayEnd={(i: number) => {
           if(i < sentences.length) {
             const news = sentences[i + 1].sentence
             setPlaying(news)
           }
-        }} index={index}  label={item.sentence}  playing={item.sentence === playing} key={item.original} s={item.original} p={item.phonetic} t={item.translation}></Item>
+        }} index={index} sound={sound} delay={item.delay}  label={item.sentence}  playing={item.sentence === playing} key={item.original} s={item.original} p={item.phonetic} t={item.translation}></Item>
       })}
     </div>
   )
