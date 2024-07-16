@@ -6,9 +6,9 @@ import React, { useEffect, useRef, useState } from 'react'
 import { AudioOutlined, SoundOutlined } from '@ant-design/icons';
 const { Text } = Typography;
 
-const maxCount = 0 ;
 
-export default function Item({ sound , delay,label ,s, p, t, playing,  onPlayEnd, index }: any) {
+
+export default function Item({ sound ,times , delay,label ,s, p, t, playing,  onPlayEnd, index }: any) {
 
   const audioRef = useRef<any>(null);
   const [playCount, setPlayCount] = useState(0);
@@ -17,6 +17,7 @@ export default function Item({ sound , delay,label ,s, p, t, playing,  onPlayEnd
   const [isWaite, setIsWaite] = useState(false);
   const settimeRef = useRef<any>(null);
   const myRef = useRef<any>(null);
+  const maxCount = times ;
 
     // useEffect(() => {
        
@@ -98,7 +99,7 @@ export default function Item({ sound , delay,label ,s, p, t, playing,  onPlayEnd
           if(onPlayEnd) onPlayEnd(index)
     
         }
-      }, (delay || 0) * 1000 + 1000);
+      }, maxCount ? maxCount * time :  ((delay || 0) * 1000 + 1000));
     // }
     // else {
     //   timeRef.current = 0 ;
