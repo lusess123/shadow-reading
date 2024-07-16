@@ -1,3 +1,4 @@
+# shellcheck disable=SC2148
 
 containers=$(docker ps -a | grep shadow-reading | awk '{print $1}')
 if [ -n "$containers" ]; then
@@ -6,4 +7,5 @@ fi
 
 docker build -t shadow-reading  .
 
-docker run -d  -p 3050:3000  shadow-reading
+# shellcheck disable=SC2046
+docker run -d  -p 3050:3000  -v $(pwd)/audio_cache:/app/audio_cache shadow-reading
