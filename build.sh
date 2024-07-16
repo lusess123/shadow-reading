@@ -6,4 +6,4 @@ fi
 
 docker build -t shadow-reading  .
 
-docker run -d  -p 11434:11434  shadow-reading
+docker run -d  -p 3050:3000  shadow-reading
