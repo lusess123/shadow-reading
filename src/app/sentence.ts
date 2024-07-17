@@ -17,6 +17,7 @@ export const sentences: {
       '[təˈdeɪ, aɪ wɒnt tə ʃeə sʌm kiː ˈɪnsaɪts frəm ðə bʊk "kəʊ-ɪnˈtɛlɪdʒəns: ˈlɪvɪŋ ənd ˈwɜːrkɪŋ wɪð eɪaɪ," ˈpʌblɪʃt ɪn ˈeɪprəl 2024]',
   },
   {
+    delay: 4,
     "sentence": "Co-I<span style=\"color:red;\">n</span>tellige<span style=\"color:red;\">n</span>ce mea<span style=\"color:red;\">n</span>s huma<span style=\"color:red;\">n</span>-machine collaborative i<span style=\"color:red;\">n</span>tellige<span style=\"color:red;\">n</span>ce. AI still ca<span style=\"color:red;\">n</span>'t fully replace huma<span style=\"color:red;\">n</span>s, so I believe that for a lo<span style=\"color:red;\">n</span>g time we will be i<span style=\"color:red;\">n</span> a era of huma<span style=\"color:red;\">n</span>-machine collaboratio<span style=\"color:red;\">n</span>.",
     "original": "Co-Intelligence means human-machine collaborative intelligence. AI still can't fully replace humans, so I believe that for a long time we will be in an era of human-machine collaboration.",
     "translation": "Co-Intelligence的意思是人机协同的智能，AI还无法完全取代人类，所以我认为很长一段时间内我们是处于人机协同的时代。",
@@ -193,7 +194,7 @@ export const sentences: {
       'The author uses <span style="color:red;">m</span>etaphors such as <span style="color:red;">v</span>iewing AI as an <span style="color:red;">a</span>lien <span style="color:red;">p</span>resence rather than an <span style="color:red;">a</span>rtificial <span style="color:red;">m</span>achine or <span style="color:red;">i</span>magining AI as an <span style="color:red;">i</span>nfinitely fast intern, eager to <span style="color:red;">p</span>lease but prone to <span style="color:red;">d</span>istorting <span style="color:red;">f</span>acts.',
     original:
       "The author uses metaphors such as viewing AI as an alien presence rather than an artificial machine or imagining AI as an infinitely fast intern, eager to please but prone to distorting facts.",
-      delay: 3,
+      delay: 5,
       translation:
       "作者使用比喻，如将人工智能视为一种外星存在，而不是人工机器，或将人工智能想象成一个无限快的实习生，渴望取悦但容易扭曲事实。",
     phonetic:
@@ -229,7 +230,7 @@ export const sentences: {
       "[ðɪs ˈprɪnsəpəl ɪnˈkʌrɪdʒɪz ʌs tə vjuː eɪaɪz ˌlɪmɪˈteɪʃənz əz ˈtɛmpərəri ənd rɪˈmeɪn ˈəʊpən tə njuː dɪˈvɛləpmənts]",
   },
   {
-    delay: 1,
+    delay: 4,
     sentence:
       'In con<span style="color:red;">cl</span>usion, un<span style="color:red;">d</span>erstanding and ap<span style="color:red;">pl</span>ying these <span style="color:red;">p</span>rinciples will help us <span style="color:red;">n</span>avigate our co<span style="color:red;">e</span>xistence with AI more ef<span style="color:red;">f</span>ectively, en<span style="color:red;">s</span>uring we <span style="color:red;">h</span>arness its <span style="color:red;">p</span>otential while re<span style="color:red;">m</span>aining <span style="color:red;">v</span>igilant about its <span style="color:red;">l</span>imitations.',
     original:
