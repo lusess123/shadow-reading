@@ -18,8 +18,8 @@ RUN pip3 install edge-tts
 # 安装 python-shell npm 包
 RUN npm install python-shell
 
-# 安装 python-shell npm 包
-RUN npm install python-shell
+# # 安装 python-shell npm 包
+# RUN npm install python-shell
 COPY --from=build /app/.next ./.next
 COPY --from=build /app/node_modules ./node_modules
 COPY --from=build /app/package.json ./package.json
