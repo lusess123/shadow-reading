@@ -20,7 +20,7 @@ interface VoicePackage {
     gender: string;
 }
 
-const pythonExecutable = path.join(__dirname, 'venv', 'bin', 'python3');
+const pythonExecutable = path.join('/app/', 'venv', 'bin', 'python3');
 
 /**
  * @name voices
