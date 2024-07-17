@@ -20,6 +20,8 @@ interface VoicePackage {
     gender: string;
 }
 
+const pythonExecutable = path.join(__dirname, 'venv', 'bin', 'python3');
+
 /**
  * @name voices
  * @description 获取语音包列表
@@ -27,7 +29,7 @@ interface VoicePackage {
  * @returns {Promise<VoicePackage[]>} 返回语音包数组对象
  */
 export function voices(lang?: string): Promise<VoicePackage[]> {
-    const pythonExecutable = path.join(__dirname, 'venv', 'bin', 'python3');
+   
     return new Promise((resolve, reject) => {
         exec(` ${pythonExecutable}  ${_TTS_COMMAND_} -l`, (error, stdout, stderr) => {
             if (error) {
@@ -89,7 +91,7 @@ export function toVoice(text: string, filePath: string = './output.mp4', params:
             console.warn("开发警告：没有 filePath 变量，已默认设置为 output.mp4");
         }
 
-        let execCommand = `${_TTS_COMMAND_} --text "${escapeDoubleQuotes(text)}"`;
+        let execCommand = ` ${pythonExecutable} ${_TTS_COMMAND_} --text "${escapeDoubleQuotes(text)}"`;
         if (filePath) execCommand += ` --write-media '${filePath}'`;
         if (params.voice) execCommand += ` -v ${params.voice}`;
         if (params.rate) execCommand += ` --rate ${params.rate > 0 ? '+' + params.rate : params.rate}%`;
