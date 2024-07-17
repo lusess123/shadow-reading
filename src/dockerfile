@@ -5,10 +5,12 @@ COPY package*.json ./
 RUN npm config set registry https://registry.npmmirror.com/
 RUN npm ci 
 COPY . .
+ENV PYTHON_ENV='cd /app &&  source ./venv/bin/activate &&'
 RUN npx prisma generate
 RUN npm run build
 FROM node:18-alpine
 WORKDIR /app
+ENV PYTHON_ENV='cd /app &&  source ./venv/bin/activate &&'
 COPY --from=build /app/.next ./.next
 COPY --from=build /app/node_modules ./node_modules
 COPY --from=build /app/package.json ./package.json
