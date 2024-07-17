@@ -69,10 +69,11 @@ function Page() {
 
   // } ,[])
 
+
   const [playing, setPlaying] = useState("")
   const [sound, setSound] = useState(true)
   const [times, setTimes] = useState<number>(0)
-  const [v, setV] = useState(localStorage.getItem('voice') || "en-CA-ClaraNeural")
+  const [v, setV] = useState(() => (typeof window !== 'undefined' && localStorage.getItem('voice')) || "en-CA-ClaraNeural")
   return (
     <div style={{height: '8000px'}}>
       <Space className='w-full justify-center items-center p-4'>
