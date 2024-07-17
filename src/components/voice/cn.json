@@ -1,0 +1,73 @@
+[
+    {
+      "name": "zh-CN-XiaoxiaoNeural",
+      "gender": "Female",
+      "中文": "中文-中国-小小-女性"
+    },
+    {
+      "name": "zh-CN-XiaoyiNeural",
+      "gender": "Female",
+      "中文": "中文-中国-小艺-女性"
+    },
+    {
+      "name": "zh-CN-YunjianNeural",
+      "gender": "Male",
+      "中文": "中文-中国-云健-男性"
+    },
+    {
+      "name": "zh-CN-YunxiNeural",
+      "gender": "Male",
+      "中文": "中文-中国-云曦-男性"
+    },
+    {
+      "name": "zh-CN-YunxiaNeural",
+      "gender": "Male",
+      "中文": "中文-中国-云夏-男性"
+    },
+    {
+      "name": "zh-CN-YunyangNeural",
+      "gender": "Male",
+      "中文": "中文-中国-云阳-男性"
+    },
+    {
+      "name": "zh-CN-liaoning-XiaobeiNeural",
+      "gender": "Female",
+      "中文": "中文-中国辽宁-小贝-女性"
+    },
+    {
+      "name": "zh-CN-shaanxi-XiaoniNeural",
+      "gender": "Female",
+      "中文": "中文-中国陕西-小妮-女性"
+    },
+    {
+      "name": "zh-HK-HiuGaaiNeural",
+      "gender": "Female",
+      "中文": "中文-香港-晓佳-女性"
+    },
+    {
+      "name": "zh-HK-HiuMaanNeural",
+      "gender": "Female",
+      "中文": "中文-香港-晓曼-女性"
+    },
+    {
+      "name": "zh-HK-WanLungNeural",
+      "gender": "Male",
+      "中文": "中文-香港-文龙-男性"
+    },
+    {
+      "name": "zh-TW-HsiaoChenNeural",
+      "gender": "Female",
+      "中文": "中文-台湾-小辰-女性"
+    },
+    {
+      "name": "zh-TW-HsiaoYuNeural",
+      "gender": "Female",
+      "中文": "中文-台湾-小玉-女性"
+    },
+    {
+      "name": "zh-TW-YunJheNeural",
+      "gender": "Male",
+      "中文": "中文-台湾-云哲-男性"
+    }
+  ]
+  

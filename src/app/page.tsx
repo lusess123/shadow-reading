@@ -4,6 +4,7 @@ import { sentences } from './sentence'
 import { List, Row ,Col, Button, Space, InputNumber } from 'antd'
 import Item from '../components/text-item'
 import { AudioMutedOutlined, SoundOutlined } from '@ant-design/icons'
+import VoiceSlect from '@/components/voice'
 
 // let preventSleepInterval: any = null;
 
@@ -71,9 +72,16 @@ function Page() {
   const [playing, setPlaying] = useState("")
   const [sound, setSound] = useState(true)
   const [times, setTimes] = useState<number>(0)
+  const [v, setV] = useState(localStorage.getItem('voice') || "en-CA-ClaraNeural")
   return (
     <div style={{height: '8000px'}}>
       <Space className='w-full justify-center items-center p-4'>
+        <VoiceSlect className="w-[250px]"value={v}  onChange={(v:any) => {
+            setV(v)
+            localStorage.setItem('voice', v);
+        }
+         
+          }></VoiceSlect>
       <Button onClick={()=>{
           setPlaying(sentences[0].sentence)
          
@@ -90,7 +98,7 @@ function Page() {
             const news = sentences[i + 1].sentence
             setPlaying(news)
           }
-        }} index={index} times={times} sound={sound} delay={item.delay}  label={item.sentence}  playing={item.sentence === playing} key={item.original} s={item.original} p={item.phonetic} t={item.translation}></Item>
+        }} v={v} index={index} times={times} sound={sound} delay={item.delay}  label={item.sentence}  playing={item.sentence === playing} key={item.original} s={item.original} p={item.phonetic} t={item.translation}></Item>
       })}
     </div>
   )

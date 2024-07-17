@@ -4,6 +4,7 @@ export const sentences: {
   translation: string;
   original: string;
   delay?: number;
+  
 }[] = [
   {
     sentence:

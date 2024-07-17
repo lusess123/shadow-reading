@@ -8,7 +8,7 @@ const { Text } = Typography;
 
 
 
-export default function Item({ sound ,times , delay,label ,s, p, t, playing,  onPlayEnd, index }: any) {
+export default function Item({ v , sound ,times , delay,label ,s, p, t, playing,  onPlayEnd, index }: any) {
 
   const audioRef = useRef<any>(null);
   const [playCount, setPlayCount] = useState(0);
@@ -19,16 +19,29 @@ export default function Item({ sound ,times , delay,label ,s, p, t, playing,  on
   const myRef = useRef<any>(null);
   const maxCount = times ;
 
-    // useEffect(() => {
+    useEffect(() => {
+
+      if( audioRef.current) {
+        audioRef.current.src = `/api/text?s=${s}&v=${v}`;  // 改变音频源
+        audioRef.current.load();              // 重新载入音频文件
+      }
+ 
        
-    // }, []);
+    }, [s,v ]);
 
 
   useEffect(() => {
     if(!audioRef.current.currentTime && playing) {
-      playAudio()
+      audioRef.current.load(); 
+      audioRef.current.addEventListener('loadeddata', function() {
+        console.log('Audio data loaded');
+        // 你可以在这里执行任何需要的回调操作
+        playAudio()  // 示例：自动播放新的音频
+    }, { once: true }); // 使用 once: true 保证回调只执行一次
+     
     } else {
       if(!playing) {
+        audioRef.current.load(); 
         timeRef.current = 0 ;
         audioRef.current.pause();
         audioRef.current.currentTime = 0;
@@ -117,7 +130,7 @@ export default function Item({ sound ,times , delay,label ,s, p, t, playing,  on
 
   return <Card className='!text-xl' ref={myRef}>
 
-      <audio  onEnded={handleEnded} onLoadedMetadata={handleLoadedMetadata} ref={audioRef} src={`/api/text?s=${s}`} />
+      <audio  onEnded={handleEnded} onLoadedMetadata={handleLoadedMetadata} ref={audioRef}  />
       <div onMouseUp={(e)=> {
            if(!window || !window.getSelection) return 
             var selectedText = (window as any).getSelection().toString();
