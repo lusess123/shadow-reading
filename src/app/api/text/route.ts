@@ -26,7 +26,7 @@ export async function GET(req: NextRequest) {
   if (!v) {
     return NextResponse.json({ error: "缺少音频文件参数角色" });
   }
-  const cacheDir = path.resolve(process.cwd(), "audio_cache_"+v);
+  const cacheDir = path.resolve(process.cwd(), "audio_cache", v);
 
 // 确保缓存目录存在
 if (!fs.existsSync(cacheDir)) {
