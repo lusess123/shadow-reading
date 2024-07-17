@@ -8,11 +8,15 @@ COPY . .
 RUN npm run build
 FROM node:22-alpine
 WORKDIR /app
+
 # 安装 python3 和 pip
-RUN apt-get update && apt-get install -y python3 python3-pip
+RUN apk add --no-cache python3 py3-pip
 
 # 安装 edge-tts
 RUN pip3 install edge-tts
+
+# 安装 python-shell npm 包
+RUN npm install python-shell
 
 # 安装 python-shell npm 包
 RUN npm install python-shell
