@@ -19,8 +19,6 @@ RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
 RUN python3 -m venv venv && \
     ./venv/bin/pip install edge-tts
 
-# 安装 python-shell npm 包
-RUN npm install python-shell
 
 
 
@@ -33,6 +31,9 @@ COPY --from=build /app/package.json ./package.json
 COPY --from=build /app/.env ./.env
 COPY --from=build /app/audio_cache ./audio_cache
 # 安装 python-shell npm 包
+RUN npm config set registry https://registry.npmmirror.com/
+# 安装 python-shell npm 包
+RUN npm install python-shell
 
 
 EXPOSE 3000
