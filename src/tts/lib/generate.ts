@@ -11,6 +11,7 @@
 import { exec } from 'child_process';
 import { wlog, elog, slog } from '../tools';
 import 'colors';
+import path from 'path';
 
 const _TTS_COMMAND_ = "edge-tts";
 
@@ -26,8 +27,9 @@ interface VoicePackage {
  * @returns {Promise<VoicePackage[]>} 返回语音包数组对象
  */
 export function voices(lang?: string): Promise<VoicePackage[]> {
+    const pythonExecutable = path.join(__dirname, 'venv', 'bin', 'python3');
     return new Promise((resolve, reject) => {
-        exec(`${_TTS_COMMAND_} -l`, (error, stdout, stderr) => {
+        exec(` ${pythonExecutable}  ${_TTS_COMMAND_} -l`, (error, stdout, stderr) => {
             if (error) {
                 reject(stderr);
                 return;

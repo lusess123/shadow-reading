@@ -4,6 +4,8 @@ COPY package*.json ./
 # COPY .env.local ./
 RUN npm config set registry https://registry.npmmirror.com/
 RUN npm i
+# 安装 python-shell npm 包
+RUN npm install python-shell
 
 COPY . .
 RUN npm run build
@@ -32,8 +34,7 @@ COPY --from=build /app/.env ./.env
 COPY --from=build /app/audio_cache ./audio_cache
 # 安装 python-shell npm 包
 RUN npm config set registry https://registry.npmmirror.com/
-# 安装 python-shell npm 包
-RUN npm install python-shell
+
 
 
 EXPOSE 3000
