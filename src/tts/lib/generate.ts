@@ -20,7 +20,7 @@ interface VoicePackage {
     gender: string;
 }
 
-const pythonExecutable = process.env.PYTHON_ENV;
+const pythonExecutable = process.env.PYTHON_ENV || '';
 
 /**
  * @name voicesENV PYTHON_ENV='cd /app &&  source ./venv/bin/activate &&'
