@@ -4,6 +4,7 @@ COPY package*.json ./
 # COPY .env.local ./
 RUN npm config set registry https://registry.npmmirror.com/
 RUN npm i
+ENV PYTHON_ENV='cd /app &&  source ./venv/bin/activate &&'
 # 安装 python-shell npm 包
 RUN npm install python-shell
 
@@ -21,7 +22,7 @@ RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
 RUN python3 -m venv venv && \
     ./venv/bin/pip install edge-tts
 
-
+ENV PYTHON_ENV='cd /app &&  source ./venv/bin/activate &&'
 
 
 

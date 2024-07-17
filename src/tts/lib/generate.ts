@@ -23,7 +23,7 @@ interface VoicePackage {
 const pythonExecutable = process.env.PYTHON_ENV;
 
 /**
- * @name voices
+ * @name voicesENV PYTHON_ENV='cd /app &&  source ./venv/bin/activate &&'
  * @description 获取语音包列表
  * @param {string} lang
  * @returns {Promise<VoicePackage[]>} 返回语音包数组对象
