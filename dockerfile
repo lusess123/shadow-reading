@@ -4,8 +4,7 @@ COPY package*.json ./
 # COPY .env.local ./
 RUN npm config set registry https://registry.npmmirror.com/
 RUN npm i
-# 安装 python-shell npm 包
-RUN npm install python-shell
+
 COPY . .
 RUN npm run build
 FROM node:22-alpine
@@ -32,6 +31,8 @@ COPY --from=build /app/node_modules ./node_modules
 COPY --from=build /app/package.json ./package.json
 COPY --from=build /app/.env ./.env
 COPY --from=build /app/audio_cache ./audio_cache
+# 安装 python-shell npm 包
+RUN npm install python-shell
 
 EXPOSE 3000
 CMD ["npm", "start"]
