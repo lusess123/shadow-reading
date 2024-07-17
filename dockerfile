@@ -11,8 +11,10 @@ RUN npm run build
 FROM node:22-alpine
 WORKDIR /app
 
-# 更新软件源并安装 python3 和 pip
-RUN apk update && apk add --no-cache python3 py3-pip
+# 替换软件源并安装 python3 和 pip
+RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories && \
+    apk update && \
+    apk add --no-cache python3 py3-pip
 
 # 安装 edge-tts
 RUN pip3 install edge-tts
