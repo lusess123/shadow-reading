@@ -155,6 +155,7 @@ export const sentences: {
       "[ˈprɪnsəpəl θriː: triːt eɪaɪ laɪk ə ˈpɜːrsən (bʌt tɛl ɪt wɒt kaɪnd əv ˈpɜːrsən ɪt ɪz)]",
   },
   {
+     "delay": 4,
     "sentence": "On one hand, compared to traditional software, AI software is indeed more huma<span style=\"color:red;\">n</span>-like. On the other hand, a<span style=\"color:red;\">n</span>thropomorphizi<span style=\"color:red;\">n</span>g, while it ca<span style=\"color:red;\">n</span> lead to co<span style=\"color:red;\">n</span>fusio<span style=\"color:red;\">n</span> a<span style=\"color:red;\">n</span>d misu<span style=\"color:red;\">n</span>dersta<span style=\"color:red;\">n</span>di<span style=\"color:red;\">n</span>g, also creates familia<span style=\"color:red;\">r</span>ity a<span style=\"color:red;\">n</span>d co<span style=\"color:red;\">n</span><span style=\"color:red;\">n</span>ectio<span style=\"color:red;\">n</span>.",
     "original": "On one hand, compared to traditional software, AI software is indeed more human-like. On the other hand, anthropomorphizing, while it can lead to confusion and misunderstanding, also creates familiarity and connection.",
     "translation": "一方面跟传统软件比起来，AI软件确实更像人。另一方面，拟人化虽然可能导致混淆和误解，但是也创造了熟悉感和连接感。",
