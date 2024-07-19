@@ -3,10 +3,10 @@ WORKDIR /app
 COPY package*.json ./
 # COPY .env.local ./
 RUN npm config set registry https://registry.npmmirror.com/
-RUN npm i
+RUN npm ci
 ENV PYTHON_ENV='cd /app &&  source ./venv/bin/activate &&'
 # 安装 python-shell npm 包
-RUN npm install python-shell
+# RUN npm install python-shell
 
 COPY . .
 RUN npm run build
