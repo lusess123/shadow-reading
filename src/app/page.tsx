@@ -5,6 +5,7 @@ import { List, Row ,Col, Button, Space, InputNumber } from 'antd'
 import Item from '../components/text-item'
 import { AudioMutedOutlined, SoundOutlined } from '@ant-design/icons'
 import VoiceSlect from '@/components/voice'
+import NoSleep from 'nosleep.js';
 
 // let preventSleepInterval: any = null;
 
@@ -68,8 +69,16 @@ function Page() {
   //   }
 
   // } ,[])
+  useEffect(()=>{
+    const noSleep = new NoSleep();
+    document.addEventListener('click', function enableNoSleep() {
+      document.removeEventListener('click', enableNoSleep, false);
+      noSleep.enable();
+    }, false);
 
+  },[])
 
+   
   const [playing, setPlaying] = useState("")
   const [sound, setSound] = useState(true)
   const [times, setTimes] = useState<number>(0)
