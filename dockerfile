@@ -9,6 +9,7 @@ ENV PYTHON_ENV='cd /app &&  source ./venv/bin/activate &&'
 # RUN npm install python-shell
 
 COPY . .
+RUN ls
 RUN npm run build
 FROM node:22-alpine
 WORKDIR /app
