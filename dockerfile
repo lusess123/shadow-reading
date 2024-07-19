@@ -1,4 +1,4 @@
-FROM node:22-alpine AS build
+FROM node:20-alpine AS build
 WORKDIR /app
 COPY package*.json ./
 # COPY .env.local ./
@@ -11,7 +11,7 @@ ENV PYTHON_ENV='cd /app &&  source ./venv/bin/activate &&'
 COPY . .
 RUN ls
 RUN npm run build
-FROM node:22-alpine
+FROM build
 WORKDIR /app
 
 # 替换软件源并安装 python3 和 pip
