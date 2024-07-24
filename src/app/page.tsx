@@ -1,11 +1,17 @@
 'use client'
 import React, { useEffect, useRef, useState } from 'react'
 import { sentences } from './sentence'
-import { List, Row ,Col, Button, Space, InputNumber } from 'antd'
+import { List, Row ,Col, Button, Space, InputNumber, Select } from 'antd'
 import Item from '../components/text-item'
 import { AudioMutedOutlined, SoundOutlined } from '@ant-design/icons'
 import VoiceSlect from '@/components/voice'
 import NoSleep from 'nosleep.js';
+import Course1 from './cource.json'
+
+const textes : Record<string, typeof sentences>   = {
+    'co' : sentences,
+    'genAI1': Course1
+} 
 
 // let preventSleepInterval: any = null;
 
@@ -61,6 +67,12 @@ import NoSleep from 'nosleep.js';
 
 function Page() {
 
+  const [client, setClient] = useState(false)
+  useEffect(()=>{
+    setClient(true)
+  },[])
+
+
   // useEffect(()=>{
 
   //   requestWakeLock();
@@ -78,14 +90,24 @@ function Page() {
 
   },[])
 
-   
+   const [content, setContent] = useState(() => (typeof window !== 'undefined' && localStorage.getItem('content')) || "co")
   const [playing, setPlaying] = useState("")
   const [sound, setSound] = useState(true)
   const [times, setTimes] = useState<number>(0)
   const [v, setV] = useState(() => (typeof window !== 'undefined' && localStorage.getItem('voice')) || "en-CA-ClaraNeural")
+  if(!client) return null;
   return (
     <div style={{height: '8000px'}}>
-      <Space className='w-full justify-center items-center p-4'>
+      <Space className='w-full  flex-wrap  justify-center items-center p-4'>
+        <Select value={content} onChange={(v)=> { 
+          setContent(v)
+          localStorage.setItem('content', v);
+         }} options={Object.keys(textes).map( k => {
+          return {
+            value: k,
+            label: k
+          }
+        })}></Select>
         <VoiceSlect className="w-[250px]"value={v}  onChange={(v:any) => {
             setV(v)
             localStorage.setItem('voice', v);
@@ -93,7 +115,7 @@ function Page() {
          
           }></VoiceSlect>
       <Button onClick={()=>{
-          setPlaying(sentences[0].sentence)
+          setPlaying(textes[content][0].sentence)
          
       }}>播放</Button>
          <Button onClick={()=>{
@@ -102,10 +124,10 @@ function Page() {
       }}>声音 {sound ? <SoundOutlined /> : <AudioMutedOutlined />}</Button>
       <InputNumber value={times} onChange={(val) => setTimes(val || 0)}></InputNumber>
       </Space>
-      { sentences.map((item, index) => {
+      { textes[content].map((item, index) => {
         return     <Item  onPlayEnd={(i: number) => {
-          if(i < sentences.length) {
-            const news = sentences[i + 1].sentence
+          if(i < textes[content].length) {
+            const news = textes[content][i + 1].sentence
             setPlaying(news)
           }
         }} v={v} index={index} times={times} sound={sound} delay={item.delay}  label={item.sentence}  playing={item.sentence === playing} key={item.original} s={item.original} p={item.phonetic} t={item.translation}></Item>
