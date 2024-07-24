@@ -90,7 +90,7 @@ function Page() {
 
   },[])
 
-   const [content, setContent] = useState(() => (typeof window !== 'undefined' && localStorage.getItem('content')) || "co")
+   const [content, setContent] = useState(() => (typeof window !== 'undefined' && localStorage.getItem('content')) || "genAI1")
   const [playing, setPlaying] = useState("")
   const [sound, setSound] = useState(true)
   const [times, setTimes] = useState<number>(0)
