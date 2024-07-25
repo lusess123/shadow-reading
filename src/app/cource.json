@@ -12,12 +12,6 @@
     "phonetic": "[ðɪs kɔrs ɪz beɪst ɒn æn ˈoʊpən sɔrs kəˈrɪkjələm wɪð ðə seɪm neɪm əˈveɪləbəl ɒn ˈɡɪthəb ðæt jʊ kæn faɪnd æt ə lɪŋk ɒn ðə skriːn]"
   },
   {
-    "sentence": "I'm Carlotta Castello, I'm a Cloud Advocate at Microsoft focused on artificial intelligence technologies.",
-    "original": "I'm Carlotta Castello, I'm a Cloud Advocate at Microsoft focused on artificial intelligence technologies.",
-    "translation": "我叫Carla Castello，是微软的云计算推广专家，专注于人工智能技术。",
-    "phonetic": "[aɪm kɑːˈlɒtə kæˈstɛloʊ, aɪm ə klaʊd ˈædvəkɪt æt ˈmaɪkrəˌsɒft ˈfoʊkəst ɒn ɑːrˈtɪfɪʃəl ɪnˈtɛlɪdʒəns tɛkˈnɒlədʒiz]"
-  },
-  {
     "sentence": "In this video, I'm going to introduce you to generative AI and large language models.",
     "original": "In this video, I'm going to introduce you to generative AI and large language models.",
     "translation": "在这个视频中，我将向你介绍生成式AI和大型语言模型。",
@@ -328,5 +322,11 @@
     "original": "Thank you for joining this introductory lesson on generative AI, and I look forward to exploring more with you in the upcoming lessons.",
     "translation": "感谢您参加这节生成式人工智能的入门课程，我期待在接下来的课程中与您进一步探索。",
     "phonetic": "[θæŋk juː fɔːr ˈdʒɔɪnɪŋ ðɪs ˌɪntrəˈdʌktəri ˈlɛsən ɒn ˈdʒɛnəreɪtɪv eɪ aɪ, ənd aɪ lʊk fɔːrwəd tə ɪkˈsplɔːrɪŋ mɔː wɪð juː ɪn ði ˈʌpkʌmɪŋ ˈlɛsənz]"
+  }, 
+  {
+    "sentence":"For the sake of revolutionizing, this ambitious fictional character, after struggling, finally reached the pinnacle, conquered inevitable challenges, significantly harnessed the power of technology, and excelled to a degree that explicitly showcased the significant hype.",
+    "original":"For the sake of revolutionizing, this ambitious fictional character, after struggling, finally reached the pinnacle, conquered inevitable challenges, significantly harnessed the power of technology, and excelled to a degree that explicitly showcased the significant hype.",
+    "translation": "为了革命化的目的，这个雄心勃勃的虚构人物在经历了斗争后，最终达到了巅峰，征服了不可避免的挑战，显著地利用了技术的力量，并且在很大程度上超过了预期，明确展示了 hype(炒作) 的重要性。",
+    "phonetic": ""
   }
 ]
