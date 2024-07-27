@@ -124,7 +124,11 @@ function Page() {
          
       }}>声音 {sound ? <SoundOutlined /> : <AudioMutedOutlined />}</Button>
       <InputNumber value={times} onChange={(val) => setTimes(val || 0)}></InputNumber>
-      <Button onClick={()=> setDelay(!delay)}>{delay ? "有延迟" : "没有延迟"}</Button>
+      <Button onClick={()=>  { 
+        localStorage.setItem('delay', !delay + '');
+        setDelay(!delay)
+
+        }}>{delay ? "有延迟" : "没有延迟"}</Button>
       </Space>
       { textes[content].map((item, index) => {
         return     <Item  onPlayEnd={(i: number) => {
