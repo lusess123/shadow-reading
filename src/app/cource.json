@@ -48,9 +48,7 @@
     "phonetic": "[ɪn ðɪs kɔrs, wiːl dɛlv ˈɪntuː haʊ aʊər ˈstɑːrtʌp ˈhɑːrnəsɪz ðə ˈpaʊər əv ˈdʒɛnəˌreɪtɪv eɪ aɪ tə ʌnˈlɒk nuː pɒsəˈbɪlɪtiz ɪn ˌɛdʒʊˈkeɪʃən]"
   },
   {
-    "sentence": "We also examine how
-
- they address the inevitable challenges tied to the social impact of this technology and its technological limitations.",
+    "sentence": "We also examine how they address the inevitable challenges tied to the social impact of this technology and its technological limitations.",
     "original": "We also examine how they address the inevitable challenges tied to the social impact of this technology and its technological limitations.",
     "translation": "我们还会探讨它们如何应对与这项技术的社会影响及其技术限制相关的不可避免的挑战。",
     "phonetic": "[wiː ˈɔːlsə ɪɡˈzæmɪn haʊ ðeɪ əˈdrɛs ðə ɪˈnɛvɪtəbl ˈʧælɪndʒɪz taɪd tə ðə ˈsəʊʃəl ˈɪmpækt əv ðɪs tɛkˈnɒlədʒi ənd ɪts tɛkˌnɒlədʒɪkəl ˌlɪmɪˈteɪʃənz]"
@@ -106,9 +104,7 @@
   {
     "sentence": "In more recent times, advancements in hardware technology allowed for the development of advanced machine learning algorithms, particularly neural networks.",
     "original": "In more recent times, advancements in hardware technology allowed for the development of advanced machine learning algorithms, particularly neural networks.",
-    "translation": "在最近几年，硬件技术的进步促进了先进机器学习算法的发展，
-
-尤其是神经网络。",
+    "translation": "在最近几年，硬件技术的进步促进了先进机器学习算法的发展，尤其是神经网络。",
     "phonetic": "[ɪn mɔːr ˈriːsənt taɪmz, ədˈvænsmənts ɪn ˈhɑːrdweər tɛkˈnɒlədʒi əˈlaʊd fə ðə dɪˈvɛləpmənt əv ədˈvænst mʃiːn ˈlɜːrnɪŋ ˈælgərɪðəmz, pəˈtɪkjələrli ˈnjʊərəl ˈnɛtwɜːrks]"
   },
   {
@@ -174,9 +170,7 @@
   {
     "sentence": "These models, trained on vast amounts of data from sources like books, articles, and websites, possess a unique adaptability.",
     "original": "These models, trained on vast amounts of data from sources like books, articles, and websites, possess a unique adaptability.",
-    "translation": "这些模型在大量的数据来源如书籍、文章和网站上
-
-进行训练，具有独特的适应性。",
+    "translation": "这些模型在大量的数据来源如书籍、文章和网站上进行训练，具有独特的适应性。",
     "phonetic": "[ðiz ˈmɒdəlz, treɪnd ɒn væst əˈmaʊnts əv ˈdeɪtə frəm ˈsɔːrsɪz laɪk bʊks, ˈɑːrtɪklz, ənd ˈwɛbsaɪts, pəˈzɛs ə juˈniːk əˌdæptəˈbɪləti]"
   },
   {
@@ -243,9 +237,7 @@
     "sentence": "The tokenizer's primary job is to really break down the input text into an array of those tokens.",
     "original": "The tokenizer's primary job is to really break down the input text into an array of those tokens.",
     "translation": "词标记化器的主要工作是将输入文本拆分成这些词标记的数组。",
-    "phonetic": "[ðə ˈtəʊkənaɪzəz ˈpraɪməri dʒɒb ɪz tə ˈrɪəli breɪk daʊn ðə ˈɪnpʊt tɛkst ˈɪntuː æn ə
-
-ˈreɪ əv ðəʊz ˈtəʊkənz]"
+    "phonetic": "[ðə ˈtəʊkənaɪzəz ˈpraɪməri dʒɒb ɪz tə ˈrɪəli breɪk daʊn ðə ˈɪnpʊt tɛkst ˈɪntuː æn əˈreɪ əv ðəʊz ˈtəʊkənz]"
   },
   {
     "sentence": "These tokens are then further mapped to token indices.",
@@ -322,9 +314,7 @@
   {
     "sentence": "To simulate the process of creative thinking, a degree of randomness is introduced into the selection process.",
     "original": "To simulate the process of creative thinking, a degree of randomness is introduced into the selection process.",
-    "translation": "为了模拟创造性
-
-思维的过程，选择过程中引入了一定程度的随机性。",
+    "translation": "为了模拟创造性思维的过程，选择过程中引入了一定程度的随机性。",
     "phonetic": "[tə ˈsɪmjʊˌleɪt ðə ˈprəʊsɛs əv kriːeɪˈtɪv ˈθɪŋkɪŋ, ə dɪˈɡriː əv ˈrændəmnəs ɪz ˌɪntrəˈdjuːst ˈɪntuː ðə sɪˈlɛkʃən ˈprəʊsɛs]"
   },
   {
@@ -385,9 +375,7 @@
     "sentence": "Thank you for joining this introductory lesson on generative AI, and I look forward to exploring more with you in the upcoming lessons.",
     "original": "Thank you for joining this introductory lesson on generative AI, and I look forward to exploring more with you in the upcoming lessons.",
     "translation": "感谢您参加这节生成式人工智能的入门课程，我期待在接下来的课程中与您进一步探索。",
-    "phonetic": "[θæŋk juː fɔːr ˈdʒɔɪnɪŋ ðɪs ˌɪntrəˈdʌktəri ˈlɛsən ɒn ˈdʒɛn
-
-əreɪtɪv eɪ aɪ, ənd aɪ lʊk fɔːrwəd tə ɪkˈsplɔːrɪŋ mɔː wɪð juː ɪn ði ˈʌpkʌmɪŋ ˈlɛsənz]"
+    "phonetic": "[θæŋk juː fɔːr ˈdʒɔɪnɪŋ ðɪs ˌɪntrəˈdʌktəri ˈlɛsən ɒn ˈdʒɛnəreɪtɪv eɪ aɪ, ənd aɪ lʊk fɔːrwəd tə ɪkˈsplɔːrɪŋ mɔː wɪð juː ɪn ði ˈʌpkʌmɪŋ ˈlɛsənz]"
   }, 
   {
     "sentence":"For the sake of revolutionizing, this ambitious fictional character, after struggling, finally reached the pinnacle.",
