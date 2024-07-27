@@ -112,7 +112,7 @@ export default function Item({ v , sound ,times , delay,label ,s, p, t, playing,
           if(onPlayEnd) onPlayEnd(index)
     
         }
-      }, maxCount ? maxCount * (time +  ((delay || 0) * 1000 + 2000)) :  ((delay || 0) * 1000 + 2000));
+      },  maxCount * (time) );
     // }
     // else {
     //   timeRef.current = 0 ;
