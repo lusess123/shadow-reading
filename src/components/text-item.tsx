@@ -8,7 +8,7 @@ const { Text } = Typography;
 
 
 
-export default function Item({ v , sound ,times , delay,label ,s, p, t, playing,  onPlayEnd, index }: any) {
+export default function Item({ v , enanbleDelay ,sound ,times , delay,label ,s, p, t, playing,  onPlayEnd, index }: any) {
 
   const audioRef = useRef<any>(null);
   const [playCount, setPlayCount] = useState(0);
@@ -112,7 +112,7 @@ export default function Item({ v , sound ,times , delay,label ,s, p, t, playing,
           if(onPlayEnd) onPlayEnd(index)
     
         }
-      },  maxCount * (time) );
+      },  !enanbleDelay ?  maxCount *  time : (maxCount ? maxCount * (time +  ((delay || 0) * 1000 + 2000)) :  ((delay || 0) * 1000 + 2000)));
     // }
     // else {
     //   timeRef.current = 0 ;

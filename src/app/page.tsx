@@ -95,6 +95,7 @@ function Page() {
   const [sound, setSound] = useState(true)
   const [times, setTimes] = useState<number>(0)
   const [v, setV] = useState(() => (typeof window !== 'undefined' && localStorage.getItem('voice')) || "en-CA-ClaraNeural")
+  const [delay, setDelay] = useState(() => !!((typeof window !== 'undefined' && localStorage.getItem('delay')) || "delay"))
   if(!client) return null;
   return (
     <div style={{height: '8000px'}}>
@@ -123,6 +124,7 @@ function Page() {
          
       }}>声音 {sound ? <SoundOutlined /> : <AudioMutedOutlined />}</Button>
       <InputNumber value={times} onChange={(val) => setTimes(val || 0)}></InputNumber>
+      <Button onClick={()=> setDelay(!delay)}>{delay ? "有延迟" : "没有延迟"}</Button>
       </Space>
       { textes[content].map((item, index) => {
         return     <Item  onPlayEnd={(i: number) => {
@@ -130,7 +132,7 @@ function Page() {
             const news = textes[content][i + 1].sentence
             setPlaying(news)
           }
-        }} v={v} index={index} times={times} sound={sound} delay={item.delay}  label={item.sentence}  playing={item.sentence === playing} key={item.original} s={item.original} p={item.phonetic} t={item.translation}></Item>
+        }} v={v} index={index} times={times} sound={sound} enanbleDelay={delay} delay={item.delay}  label={item.sentence}  playing={item.sentence === playing} key={item.original} s={item.original} p={item.phonetic} t={item.translation}></Item>
       })}
     </div>
   )
