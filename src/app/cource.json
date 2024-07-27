@@ -48,7 +48,9 @@
     "phonetic": "[ɪn ðɪs kɔrs, wiːl dɛlv ˈɪntuː haʊ aʊər ˈstɑːrtʌp ˈhɑːrnəsɪz ðə ˈpaʊər əv ˈdʒɛnəˌreɪtɪv eɪ aɪ tə ʌnˈlɒk nuː pɒsəˈbɪlɪtiz ɪn ˌɛdʒʊˈkeɪʃən]"
   },
   {
-    "sentence": "We also examine how they address the inevitable challenges tied to the social impact of this technology and its technological limitations.",
+    "sentence": "We also examine how
+
+ they address the inevitable challenges tied to the social impact of this technology and its technological limitations.",
     "original": "We also examine how they address the inevitable challenges tied to the social impact of this technology and its technological limitations.",
     "translation": "我们还会探讨它们如何应对与这项技术的社会影响及其技术限制相关的不可避免的挑战。",
     "phonetic": "[wiː ˈɔːlsə ɪɡˈzæmɪn haʊ ðeɪ əˈdrɛs ðə ɪˈnɛvɪtəbl ˈʧælɪndʒɪz taɪd tə ðə ˈsəʊʃəl ˈɪmpækt əv ðɪs tɛkˈnɒlədʒi ənd ɪts tɛkˌnɒlədʒɪkəl ˌlɪmɪˈteɪʃənz]"
@@ -84,21 +86,29 @@
     "phonetic": "[ðiz ˈʧætˌbɒts ˈdʒɛnəˌreɪtɪd rɪˈspɒnsɪz beɪst ɒn ˈkiːwɜːdz faʊnd ɪn ˈjuːzər ˈɪnpʊt, bʌt ɪt suːn bɪˈkeɪm klɪər ðæt ðɪs əˈprəʊʧ hæd skæləˈbɪlɪti ˌlɪmɪˈteɪʃənz]"
   },
   {
-    "sentence": "A significant turning point arrived in the 1990s when a statistical approach was applied to text analysis, and this gave birth to machine learning algorithms which could learn patterns from data without explicit programming.",
-    "original": "A significant turning point arrived in the 1990s when a statistical approach was applied to text analysis, and this gave birth to machine learning algorithms which could learn patterns from data without explicit programming.",
-    "translation": "1990年代出现了一个重要的转折点，当时统计方法被应用于文本分析，这诞生了机器学习算法，能够从数据中学习模式，而无需明确编程。",
-    "phonetic": "[ə sɪɡˈnɪfɪkənt ˈtɜːrnɪŋ pɔɪnt əˈraɪvd ɪn ðə ˌnaɪnˈtiːn ˈnɪnˈtiz wɛn ə stəˈtɪstɪkəl əˈprəʊʧ wəz əˈplaɪd tə tɛkst əˈnælɪsɪs, ənd ðɪs ɡeɪv bɜːθ tə məˈʃiːn ˈlɜːrnɪŋ ˈælgərɪðəmz wɪʧ kʊd lɜːrn ˈpætənz frəm ˈdeɪtə wɪˈðaʊt ɪkˈsplɪsɪt ˈprəʊɡræmɪŋ]"
+    "sentence": "A significant turning point arrived in the 1990s when a statistical approach was applied to text analysis.",
+    "original": "A significant turning point arrived in the 1990s when a statistical approach was applied to text analysis.",
+    "translation": "1990年代出现了一个重要的转折点，当时统计方法被应用于文本分析。",
+    "phonetic": "[ə sɪɡˈnɪfɪkənt ˈtɜːrnɪŋ pɔɪnt əˈraɪvd ɪn ðə ˌnaɪnˈtiːn ˈnɪnˈtiz wɛn ə stəˈtɪstɪkəl əˈprəʊʧ wəz əˈplaɪd tə tɛkst əˈnælɪsɪs]"
+  },
+  {
+    "sentence": "This gave birth to machine learning algorithms which could learn patterns from data without explicit programming.",
+    "original": "This gave birth to machine learning algorithms which could learn patterns from data without explicit programming.",
+    "translation": "这诞生了机器学习算法，能够从数据中学习模式，而无需明确编程。",
+    "phonetic": "[ðɪs ɡeɪv bɜːθ tə məˈʃiːn ˈlɜːrnɪŋ ˈælgərɪðəmz wɪʧ kʊd lɜːrn ˈpætənz frəm ˈdeɪtə wɪˈðaʊt ɪkˈsplɪsɪt ˈprəʊɡræmɪŋ]"
   },
   {
     "sentence": "These algorithms allowed machines to simulate human language understanding, paving the way for the AI we know today.",
     "original": "These algorithms allowed machines to simulate human language understanding, paving the way for the AI we know today.",
     "translation": "这些算法使机器能够模拟人类语言理解，为我们今天所知的AI铺平了道路。",
-    "phonetic": "[ðiz ˈælgərɪðəmz əˈlaʊd məˈʃiːnz tə ˈsɪmjʊleɪt ˈhjuːmən ˈlæŋɡwɪdʒ ˌʌndərˈstændɪŋ, ˈpeɪvɪŋ ðə weɪ fə ðə eɪ aɪ wiː noʊ təˈdeɪ]"
+    "phonetic": "[ðiz ˈælgərɪðəmz əˈlaɪd məˈʃiːnz tə ˈsɪmjʊleɪt ˈhjuːmən ˈlæŋɡwɪdʒ ˌʌndərˈstændɪŋ, ˈpeɪvɪŋ ðə weɪ fə ðə eɪ aɪ wiː noʊ təˈdeɪ]"
   },
   {
     "sentence": "In more recent times, advancements in hardware technology allowed for the development of advanced machine learning algorithms, particularly neural networks.",
     "original": "In more recent times, advancements in hardware technology allowed for the development of advanced machine learning algorithms, particularly neural networks.",
-    "translation": "在最近几年，硬件技术的进步促进了先进机器学习算法的发展，尤其是神经网络。",
+    "translation": "在最近几年，硬件技术的进步促进了先进机器学习算法的发展，
+
+尤其是神经网络。",
     "phonetic": "[ɪn mɔːr ˈriːsənt taɪmz, ədˈvænsmənts ɪn ˈhɑːrdweər tɛkˈnɒlədʒi əˈlaʊd fə ðə dɪˈvɛləpmənt əv ədˈvænst mʃiːn ˈlɜːrnɪŋ ˈælgərɪðəmz, pəˈtɪkjələrli ˈnjʊərəl ˈnɛtwɜːrks]"
   },
   {
@@ -114,10 +124,16 @@
     "phonetic": "[ðɪs ˈbreɪkˌθruː tɛkˈnɒlədʒi ˈpaʊəd ðə bɜːθ əv ˈvɜːtʃuəl əˈsɪstənts ɪn ðə ˈɜːrli ˌtwɛnti ˈfɜːrst ˈsɛnʧəri]"
   },
   {
-    "sentence": "These virtual assistants excelled at interpreting human language, identifying needs, and taking actions to fulfill them, such as answering queries with predefined scripts or connecting to third-party services.",
-    "original": "These virtual assistants excelled at interpreting human language, identifying needs, and taking actions to fulfill them, such as answering queries with predefined scripts or connecting to third-party services.",
-    "translation": "这些虚拟助手擅长于解释人类语言、识别需求，并采取行动来满足这些需求，例如使用预定义的脚本回答查询或连接到第三方服务。",
-    "phonetic": "[ðiz ˈvɜːtʃuəl əˈsɪstənts ɪkˈsɛld æt ɪnˈtɜːprɪtɪŋ ˈhjuːmən ˈlæŋɡwɪdʒ, aɪˌdɛntɪˈfaɪɪŋ niːdz, ənd ˈteɪkɪŋ ˈækʃənz tə fʊlˈfɪl ðɛm, sʌʧ æz ˈænsərɪŋ ˈkwɪriz wɪð ˌpriːdɪˈfaɪnd skrɪpts ɔː kəˈnɛktɪŋ tə θɜːrd-ˈpɑːrti ˈsɜːrvɪsɪz]"
+    "sentence": "These virtual assistants excelled at interpreting human language, identifying needs, and taking actions to fulfill them.",
+    "original": "These virtual assistants excelled at interpreting human language, identifying needs, and taking actions to fulfill them.",
+    "translation": "这些虚拟助手擅长于解释人类语言、识别需求，并采取行动来满足这些需求。",
+    "phonetic": "[ðiz ˈvɜːtʃuəl əˈsɪstənts ɪkˈsɛld æt ɪnˈtɜːprɪtɪŋ ˈhjuːmən ˈlæŋɡwɪdʒ, aɪˌdɛntɪˈfaɪɪŋ niːdz, ənd ˈteɪkɪŋ ˈækʃənz tə fʊlˈfɪl ðɛm]"
+  },
+  {
+    "sentence": "They performed tasks such as answering queries with predefined scripts or connecting to third-party services.",
+    "original": "They performed tasks such as answering queries with predefined scripts or connecting to third-party services.",
+    "translation": "例如使用预定义的脚本回答查询或连接到第三方服务。",
+    "phonetic": "[ðeɪ pəˈfɔːrmd tæsks sʌʧ æz ˈænsərɪŋ ˈkwɪriz wɪð ˌpriːdɪˈfaɪnd skrɪpts ɔː kəˈnɛktɪŋ tə θɜːrd-ˈpɑːrti ˈsɜːrvɪsɪz]"
   },
   {
     "sentence": "And so we arrived at generative AI, a subset of deep learning.",
@@ -132,10 +148,16 @@
     "phonetic": "[ˈɑːftər ˈdɛkeɪdz əv eɪ aɪ rɪˈsɜːrʧ, ə nuː ˈmɒdəl ˈɑːrkɪtɛktʃər noʊn æz ðə ˈtrænsfɔːrmər ɪˈmɜːrdʒd]"
   },
   {
-    "sentence": "Transformers could handle longer text sequences as input and were based on the attention mechanism, enabling them to focus on the most relevant information regardless of its order in the input text.",
-    "original": "Transformers could handle longer text sequences as input and were based on the attention mechanism, enabling them to focus on the most relevant information regardless of its order in the input text.",
-    "translation": "Transformer可以处理更长的文本序列作为输入，并基于注意力机制，使它们能够关注输入文本中最相关的信息，无论其顺序如何。",
-    "phonetic": "[trænsˈfɔːrməz kʊd ˈhændl ˈlɔːŋɡər tɛkst ˈsiːkwənsɪz əz ˈɪnpʊt ənd wɜːr beɪst ɒn ði əˈtɛnʃən ˌmɛkəˈnɪzəm, ɪˈneɪblɪŋ ðɛm tə ˈfoʊkəs ɒn ðə moʊst ˈrɛləvənt ˌɪnfəˈmeɪʃən rɪˈɡɑːrdləss əv ɪts ˈɔːrdər ɪn ði ˈɪnpʊt tɛkst]"
+    "sentence": "Transformers could handle longer text sequences as input and were based on the attention mechanism.",
+    "original": "Transformers could handle longer text sequences as input and were based on the attention mechanism.",
+    "translation": "Transformer可以处理更长的文本序列作为输入，并基于注意力机制。",
+    "phonetic": "[trænsˈfɔːrməz kʊd ˈhændl ˈlɔːŋɡər tɛkst ˈsiːkwənsɪz əz ˈɪnpʊt ənd wɜːr beɪst ɒn ði əˈtɛnʃən ˌmɛkəˈnɪzəm]"
+  },
+  {
+    "sentence": "This mechanism enables them to focus on the most relevant information regardless of its order in the input text.",
+    "original": "This mechanism enables them to focus on the most relevant information regardless of its order in the input text.",
+    "translation": "这种机制使它们能够关注输入文本中最相关的信息，无论其顺序如何。",
+    "phonetic": "[ðɪs ˌmɛkəˈnɪzəm ɪˈneɪblɪŋ ðɛm tə ˈfoʊkəs ɒn ðə moʊst ˈrɛləvənt ˌɪnfəˈmeɪʃən rɪˈɡɑːrdləss əv ɪts ˈɔːrdər ɪn ði ˈɪnpʊt tɛkst]"
   },
   {
     "sentence": "Today, generative AI models, often referred to as large language models, are built upon the Transformer architecture.",
@@ -152,7 +174,9 @@
   {
     "sentence": "These models, trained on vast amounts of data from sources like books, articles, and websites, possess a unique adaptability.",
     "original": "These models, trained on vast amounts of data from sources like books, articles, and websites, possess a unique adaptability.",
-    "translation": "这些模型在大量的数据来源如书籍、文章和网站上进行训练，具有独特的适应性。",
+    "translation": "这些模型在大量的数据来源如书籍、文章和网站上
+
+进行训练，具有独特的适应性。",
     "phonetic": "[ðiz ˈmɒdəlz, treɪnd ɒn væst əˈmaʊnts əv ˈdeɪtə frəm ˈsɔːrsɪz laɪk bʊks, ˈɑːrtɪklz, ənd ˈwɛbsaɪts, pəˈzɛs ə juˈniːk əˌdæptəˈbɪləti]"
   },
   {
@@ -192,10 +216,16 @@
     "phonetic": "[tɛkst prɒmpts ɑːr ʧʌŋkt ˈɪntuː ˈtəʊkənz, ˈhɛlpɪŋ ðə ˈmɒdəl ɪn prɪˈdɪktɪŋ ðə nɛkst ˈtəʊkən fɔːr kəmˈpliːʃən]"
   },
   {
-    "sentence": "Models also have a maximum length of token window, and model pricing is also typically computed by the number of tokens used in output and inputs.",
-    "original": "Models also have a maximum length of token window, and model pricing is also typically computed by the number of tokens used in output and inputs.",
-    "translation": "模型还具有最大词标记窗口长度，模型定价通常也根据输出和输入中使用的词标记数量来计算。",
-    "phonetic": "[ˈmɒdəlz ˈɔːlsəʊ hæv ə ˈmæksɪməm lɛŋθ əv ˈtəʊkən ˈwɪndəʊ, ənd ˈmɒdəl ˈpraɪsɪŋ ɪz ˈɔːlsəʊ ˈtɪpɪkli kəmˈpjuːtɪd baɪ ðə ˈnʌmbə əv ˈtəʊkənz juːzd ɪn ˈaʊtpʊt ənd ˈɪnpʊts]"
+    "sentence": "Models also have a maximum length of token window.",
+    "original": "Models also have a maximum length of token window.",
+    "translation": "模型还具有最大词标记窗口长度。",
+    "phonetic": "[ˈmɒdəlz ˈɔːlsəʊ hæv ə ˈmæksɪməm lɛŋθ əv ˈtəʊkən ˈwɪndəʊ]"
+  },
+  {
+    "sentence": "Model pricing is also typically computed by the number of tokens used in output and inputs.",
+    "original": "Model pricing is also typically computed by the number of tokens used in output and inputs.",
+    "translation": "模型定价通常也根据输出和输入中使用的词标记数量来计算。",
+    "phonetic": "[ən ˈmɒdəl ˈpraɪsɪŋ ɪz ˈɔːlsəʊ ˈtɪpɪkli kəmˈpjuːtɪd baɪ ðə ˈnʌmbə əv ˈtəʊkənz juːzd ɪn ˈaʊtpʊt ənd ˈɪnpʊts]"
   },
   {
     "sentence": "Tokenization is really an important concept in large language models and generative AI.",
@@ -210,10 +240,18 @@
     "phonetic": "[naʊ ə ˈtəʊkən ɪz ɪˈsɛnʃəlɪ ə ʧʌŋk əv tɛkst wɪʧ kæn ˈværi ɪn lɛŋθ ənd ˈtɪpɪkli kənˈsɪsts əv ə ˈsiːkwəns əv ˈkærɪktəz]"
   },
   {
-    "sentence": "The tokenizer's primary job is to really break down the input text into an array of those tokens, which are then further mapped to token indices.",
-    "original": "The tokenizer's primary job is to really break down the input text into an array of those tokens, which are then further mapped to token indices.",
-    "translation": "词标记化器的主要工作是将输入文本拆分成这些词标记的数组，然后将它们进一步映射到词标记索引。",
-    "phonetic": "[ðə ˈtəʊkənaɪzəz ˈpraɪməri dʒɒb ɪz tə ˈrɪəli breɪk daʊn ðə ˈɪnpʊt tɛkst ˈɪntuː æn əˈreɪ əv ðəʊz ˈtəʊkənz, wɪʧ ɑːr ðɛn ˈfɜːðər ˈmæpt tə ˈtəʊkən ˈɪndɪsiːz]"
+    "sentence": "The tokenizer's primary job is to really break down the input text into an array of those tokens.",
+    "original": "The tokenizer's primary job is to really break down the input text into an array of those tokens.",
+    "translation": "词标记化器的主要工作是将输入文本拆分成这些词标记的数组。",
+    "phonetic": "[ðə ˈtəʊkənaɪzəz ˈpraɪməri dʒɒb ɪz tə ˈrɪəli breɪk daʊn ðə ˈɪnpʊt tɛkst ˈɪntuː æn ə
+
+ˈreɪ əv ðəʊz ˈtəʊkənz]"
+  },
+  {
+    "sentence": "These tokens are then further mapped to token indices.",
+    "original": "These tokens are then further mapped to token indices.",
+    "translation": "然后将它们进一步映射到词标记索引。",
+    "phonetic": "[ðiz ˈtəʊkənz ɑːr ðɛn ˈfɜːðər ˈmæpt tə ˈtəʊkən ˈɪndɪsiːz]"
   },
   {
     "sentence": "These token indices are essentially integer encodings of the original text chunks, making it easier for the model to process and understand.",
@@ -222,10 +260,16 @@
     "phonetic": "[ðiz ˈtəʊkən ˈɪndɪsiːz ɑːr ɪˈsɛnʃəlɪ ˈɪntɪdʒər ɪnˈkəʊdɪŋz əv ðə əˈrɪdʒɪnəl tɛkst ʧʌŋks, ˈmeɪkɪŋ ɪt ˈiːziər fə ðə ˈmɒdəl tə ˈprəʊsɛs ənd ˌʌndəˈstænd]"
   },
   {
-    "sentence": "Now let's move to predicting the output tokens, given an input sequence of n tokens with the maximum n varying from one model to another according to the maximum content window length or for one model.",
-    "original": "Now let's move to predicting the output tokens, given an input sequence of n tokens with the maximum n varying from one model to another according to the maximum content window length or for one model.",
-    "translation": "现在让我们转向预测输出词标记，给定一个n个词标记的输入序列，其中n的最大值从一个模型到另一个模型，根据最大内容窗口长度。",
-    "phonetic": "[naʊ lɛts muːv tə prɪˈdɪktɪŋ ði ˈaʊtpʊt ˈtəʊkənz, ˈɡɪvɪn æn ˈɪnpʊt ˈsiːkwəns əv ɛn ˈtəʊkənz wɪð ðə ˈmæksɪməm ɛn ˈvɛərɪɪŋ frəm wʌn ˈmɒdəl tə əˈnʌðər əˈkɔːdɪŋ tə ðə ˈmæksɪməm ˈkɒntɛnt ˈwɪndəʊ lɛŋθ ɔː fɔː wʌn ˈmɒdəl]"
+    "sentence": "Now let's move to predicting the output tokens.",
+    "original": "Now let's move to predicting the output tokens.",
+    "translation": "现在让我们转向预测输出词标记。",
+    "phonetic": "[naʊ lɛts muːv tə prɪˈdɪktɪŋ ði ˈaʊtpʊt ˈtəʊkənz]"
+  },
+  {
+    "sentence": "Given an input sequence of n tokens, the maximum n varies from one model to another according to the maximum content window length.",
+    "original": "Given an input sequence of n tokens, the maximum n varies from one model to another according to the maximum content window length.",
+    "translation": "给定一个n个词标记的输入序列，其中n的最大值从一个模型到另一个模型，根据最大内容窗口长度。",
+    "phonetic": "[ˈɡɪvɪn æn ˈɪnpʊt ˈsiːkwəns əv ɛn ˈtəʊkənz wɪð ðə ˈmæksɪməm ɛn ˈvɛərɪɪŋ frəm wʌn ˈmɒdəl tə əˈnʌðər əˈkɔːdɪŋ tə ðə ˈmæksɪməm ˈkɒntɛnt ˈwɪndəʊ lɛŋθ]"
   },
   {
     "sentence": "The model is designed to predict a single token as its output.",
@@ -234,10 +278,16 @@
     "phonetic": "[ðə ˈmɒdəl ɪz dɪˈzaɪnd tə prɪˈdɪkt ə ˈsɪŋɡl ˈtəʊkən æz ɪts ˈaʊtpʊt]"
   },
   {
-    "sentence": "But here's where it gets interesting: the predicted token is then incorporated into the input of the next iteration, creating an expansive window pattern.",
-    "original": "But here's where it gets interesting: the predicted token is then incorporated into the input of the next iteration, creating an expansive window pattern.",
-    "translation": "但有趣的是：预测的词标记随后被纳入下一次迭代的输入中，形成一个扩展的窗口模式。",
-    "phonetic": "[bʌt hɪəz wɛr ɪt ɡɛts ˈɪntrɪstɪŋ: ðə prɪˈdɪktɪd ˈtəʊkən ɪz ðɛn ɪnˈkɔːpəreɪtɪd ˈɪntuː ðə ˈɪnpʊt əv ðə nɛkst ˌɪtəˈreɪʃən, krɪˈeɪtɪŋ æn ɪksˈpænsɪv ˈwɪndəʊ ˈpætən]"
+    "sentence": "But here's where it gets interesting: the predicted token is then incorporated into the input of the next iteration.",
+    "original": "But here's where it gets interesting: the predicted token is then incorporated into the input of the next iteration.",
+    "translation": "但有趣的是：预测的词标记随后被纳入下一次迭代的输入中。",
+    "phonetic": "[bʌt hɪəz wɛr ɪt ɡɛts ˈɪntrɪstɪŋ: ðə prɪˈdɪktɪd ˈtəʊkən ɪz ðɛn ɪnˈkɔːpəreɪtɪd ˈɪntuː ðə ˈɪnpʊt əv ðə nɛkst ˌɪtəˈreɪʃən]"
+  },
+  {
+    "sentence": "This creates an expansive window pattern.",
+    "original": "This creates an expansive window pattern.",
+    "translation": "形成一个扩展的窗口模式。",
+    "phonetic": "[ðɪs krɪˈeɪtɪŋ æn ɪksˈpænsɪv ˈwɪndəʊ ˈpætən]"
   },
   {
     "sentence": "This pattern allows the model to provide more coherent and contextually relevant responses, often extending to one or multiple sentences.",
@@ -246,10 +296,16 @@
     "phonetic": "[ðɪs ˈpætən əˈlaʊz ðə ˈmɒdəl tə prəˈvaɪd mɔːr kəʊˈhɪərənt ənd kənˈtɛkstʃuːəli ˈrɛlɪvənt rɪˈspɒnsɪz, ˈɒftən ɪkˈstɛndɪŋ tə wʌn ɔː ˈmʌltɪpl ˈsɛntənsɪz]"
   },
   {
-    "sentence": "Now let's delve into the selection process: the model chooses the output token based on its probability of occurring after the current text sequence.",
-    "original": "Now let's delve into the selection process: the model chooses the output token based on its probability of occurring after the current text sequence.",
-    "translation": "现在让我们深入了解选择过程：模型根据输出词标记的发生概率，从当前文本序列后选择。",
-    "phonetic": "[naʊ lɛts dɛlv ˈɪntuː ðə sɪˈlɛkʃən ˈprəʊsɛs: ðə ˈmɒdəl ˈʧuːzɪz ði ˈaʊtpʊt ˈtəʊkən beɪst ɒn ɪts ˌprɒbəbɪˈlɪti əv əˈkɜːrɪŋ ˈæftər ðə ˈkʌrənt tɛkst ˈsiːkwəns]"
+    "sentence": "Now let's delve into the selection process.",
+    "original": "Now let's delve into the selection process.",
+    "translation": "现在让我们深入了解选择过程。",
+    "phonetic": "[naʊ lɛts dɛlv ˈɪntuː ðə sɪˈlɛkʃən ˈprəʊsɛs]"
+  },
+  {
+    "sentence": "The model chooses the output token based on its probability of occurring after the current text sequence.",
+    "original": "The model chooses the output token based on its probability of occurring after the current text sequence.",
+    "translation": "模型根据输出词标记的发生概率，从当前文本序列后选择。",
+    "phonetic": "[ðə ˈmɒdəl ˈʧuːzɪz ði ˈaʊtpʊt ˈtəʊkən beɪst ɒn ɪts ˌprɒbəbɪˈlɪti əv əˈkɜːrɪŋ ˈæftər ðə ˈkʌrənt tɛkst ˈsiːkwəns]"
   },
   {
     "sentence": "This probability distribution is calculated using the model's training data.",
@@ -266,7 +322,9 @@
   {
     "sentence": "To simulate the process of creative thinking, a degree of randomness is introduced into the selection process.",
     "original": "To simulate the process of creative thinking, a degree of randomness is introduced into the selection process.",
-    "translation": "为了模拟创造性思维的过程，选择过程中引入了一定程度的随机性。",
+    "translation": "为了模拟创造性
+
+思维的过程，选择过程中引入了一定程度的随机性。",
     "phonetic": "[tə ˈsɪmjʊˌleɪt ðə ˈprəʊsɛs əv kriːeɪˈtɪv ˈθɪŋkɪŋ, ə dɪˈɡriː əv ˈrændəmnəs ɪz ˌɪntrəˈdjuːst ˈɪntuː ðə sɪˈlɛkʃən ˈprəʊsɛs]"
   },
   {
@@ -276,10 +334,16 @@
     "phonetic": "[ðɪs ˈrændəmnəs kæn bi kənˈtrəʊld baɪ pəˈræmɪtəz sʌʧ əz ˈtɛmpərətʃər ənd tɒp-keɪ ˈsæmplɪŋ ˈmɛθədz]"
   },
   {
-    "sentence": "Temperature controls the level of randomness: a higher temperature results in more diverse and creative outputs.",
-    "original": "Temperature controls the level of randomness: a higher temperature results in more diverse and creative outputs.",
-    "translation": "温度控制随机性的程度：较高的温度会导致更多样化和创造性的输出。",
-    "phonetic": "[ˈtɛmpərətʃər kənˈtrəʊlz ðə ˈlɛvəl əv ˈrændəmnəs: ə ˈhaɪər ˈtɛmpərətʃər rɪˈzʌlts ɪn mɔː dɪˈvɜːs ənd kriːeɪˈtɪv ˈaʊtpʊts]"
+    "sentence": "Temperature controls the level of randomness.",
+    "original": "Temperature controls the level of randomness.",
+    "translation": "温度控制随机性的程度。",
+    "phonetic": "[ˈtɛmpərətʃər kənˈtrəʊlz ðə ˈlɛvəl əv ˈrændəmnəs]"
+  },
+  {
+    "sentence": "A higher temperature results in more diverse and creative outputs.",
+    "original": "A higher temperature results in more diverse and creative outputs.",
+    "translation": "较高的温度会导致更多样化和创造性的输出。",
+    "phonetic": "[ə ˈhaɪər ˈtɛmpərətʃər rɪˈzʌlts ɪn mɔː dɪˈvɜːs ənd kriːeɪˈtɪv ˈaʊtpʊts]"
   },
   {
     "sentence": "On the other hand, lower temperatures result in more focused and deterministic responses.",
@@ -321,12 +385,20 @@
     "sentence": "Thank you for joining this introductory lesson on generative AI, and I look forward to exploring more with you in the upcoming lessons.",
     "original": "Thank you for joining this introductory lesson on generative AI, and I look forward to exploring more with you in the upcoming lessons.",
     "translation": "感谢您参加这节生成式人工智能的入门课程，我期待在接下来的课程中与您进一步探索。",
-    "phonetic": "[θæŋk juː fɔːr ˈdʒɔɪnɪŋ ðɪs ˌɪntrəˈdʌktəri ˈlɛsən ɒn ˈdʒɛnəreɪtɪv eɪ aɪ, ənd aɪ lʊk fɔːrwəd tə ɪkˈsplɔːrɪŋ mɔː wɪð juː ɪn ði ˈʌpkʌmɪŋ ˈlɛsənz]"
+    "phonetic": "[θæŋk juː fɔːr ˈdʒɔɪnɪŋ ðɪs ˌɪntrəˈdʌktəri ˈlɛsən ɒn ˈdʒɛn
+
+əreɪtɪv eɪ aɪ, ənd aɪ lʊk fɔːrwəd tə ɪkˈsplɔːrɪŋ mɔː wɪð juː ɪn ði ˈʌpkʌmɪŋ ˈlɛsənz]"
   }, 
   {
-    "sentence":"For the sake of revolutionizing, this ambitious fictional character, after struggling, finally reached the pinnacle, conquered inevitable challenges, significantly harnessed the power of technology, and excelled to a degree that explicitly showcased the significant hype.",
-    "original":"For the sake of revolutionizing, this ambitious fictional character, after struggling, finally reached the pinnacle, conquered inevitable challenges, significantly harnessed the power of technology, and excelled to a degree that explicitly showcased the significant hype.",
-    "translation": "为了革命化的目的，这个雄心勃勃的虚构人物在经历了斗争后，最终达到了巅峰，征服了不可避免的挑战，显著地利用了技术的力量，并且在很大程度上超过了预期，明确展示了 hype(炒作) 的重要性。",
+    "sentence":"For the sake of revolutionizing, this ambitious fictional character, after struggling, finally reached the pinnacle.",
+    "original":"For the sake of revolutionizing, this ambitious fictional character, after struggling, finally reached the pinnacle.",
+    "translation": "为了革命化的目的，这个雄心勃勃的虚构人物在经历了斗争后，最终达到了巅峰。",
+    "phonetic": ""
+  },
+  {
+    "sentence":"The character conquered inevitable challenges, significantly harnessed the power of technology, and excelled to a degree that explicitly showcased the significant hype.",
+    "original":"The character conquered inevitable challenges, significantly harnessed the power of technology, and excelled to a degree that explicitly showcased the significant hype.",
+    "translation": "征服了不可避免的挑战，显著地利用了技术的力量，并且在很大程度上超过了预期，明确展示了 hype(炒作) 的重要性。",
     "phonetic": ""
   }
 ]
