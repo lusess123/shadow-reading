@@ -143,7 +143,7 @@ export default function Item({ v , enanbleDelay ,sound ,times , delay,label ,s, 
       }}>
         <Text className='break-words break-all !text-xl' strong={isPlaying} > <div dangerouslySetInnerHTML={{__html : ((index + 1 ) + '.' + label)}}></div></Text>
       </div>
-      {/* <div className='ml-4 break-words break-all !text-xl'>{ <div>[{p}]</div>}</div> */}
+      <div className='ml-4 break-words break-all !text-xl'>{ <div>[{p}]</div>}</div>
       <div className='ml-4 break-words break-all !text-xl'>{ <div> ({t})</div>}</div> 
       <p className='ml-4 break-words break-all !text-xl'> { (isWaite ? "已经" : "正在")}{isPlaying ? `播放第${playCount}/${maxCount}次` : ""} {isPlaying && (isWaite ? <span><AudioOutlined ></AudioOutlined>跟读</span> : <SoundOutlined />)} {!!duration && (duration+ '秒')}
       <Button onClick={playAudio} >播放</Button>
