@@ -96,6 +96,7 @@ function Page() {
   const [times, setTimes] = useState<number>(0)
   const [v, setV] = useState(() => (typeof window !== 'undefined' && localStorage.getItem('voice')) || "en-CA-ClaraNeural")
   const [delay, setDelay] = useState(() => !!((typeof window !== 'undefined' && localStorage.getItem('delay')) || "delay"))
+  const [rate, setRate] = useState(() =>  parseInt((typeof window !== 'undefined' && localStorage.getItem('rate')) || "1"))
   if(!client) return null;
   return (
     <div style={{height: '8000px'}}>
@@ -109,6 +110,27 @@ function Page() {
             label: k
           }
         })}></Select>
+          <Select value={rate} onChange={(v:number)=> { 
+          setRate(v)
+          localStorage.setItem('rate', v.toString());
+         }} options={[
+          {
+            value: 0.5,
+            label: '0.5x'
+          },
+          {
+            value: 1,
+            label: '1x'
+          },
+          {
+            value: 1.5,
+            label: '1.5x'
+          },
+          {
+            value: 2,
+            label: '2x'
+          }
+         ]}></Select>
         <VoiceSlect className="w-[250px]"value={v}  onChange={(v:any) => {
             setV(v)
             localStorage.setItem('voice', v);
@@ -136,7 +158,7 @@ function Page() {
             const news = textes[content][i + 1].sentence
             setPlaying(news)
           }
-        }} v={v} index={index} times={times} sound={sound} enanbleDelay={delay} delay={item.delay}  label={item.sentence}  playing={item.sentence === playing} key={item.original} s={item.original} p={item.phonetic} t={item.translation}></Item>
+        }} v={v} index={index}  rate={rate} times={times} sound={sound} enanbleDelay={delay} delay={item.delay}  label={item.sentence}  playing={item.sentence === playing} key={item.original} s={item.original} p={item.phonetic} t={item.translation}></Item>
       })}
     </div>
   )

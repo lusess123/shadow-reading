@@ -378,10 +378,46 @@
     "phonetic": "[θæŋk juː fɔːr ˈdʒɔɪnɪŋ ðɪs ˌɪntrəˈdʌktəri ˈlɛsən ɒn ˈdʒɛnəreɪtɪv eɪ aɪ, ənd aɪ lʊk fɔːrwəd tə ɪkˈsplɔːrɪŋ mɔː wɪð juː ɪn ði ˈʌpkʌmɪŋ ˈlɛsənz]"
   }, 
   {
-    "sentence": "<span style=\"color:red;\">T</span>he <span style=\"color:red;\">c</span>urriculum <span style=\"color:red;\">r</span>epresents the <span style=\"color:red;\">p</span>innacle, <span style=\"color:red;\">c</span>onquering <span style=\"color:red;\">c</span>hallenges, <span style=\"color:red;\">r</span>evolutionizing <span style=\"color:red;\">f</span>ictional <span style=\"color:red;\">s</span>cenarios, <span style=\"color:red;\">d</span>elving into <span style=\"color:red;\">a</span>ccessibility, <span style=\"color:red;\">e</span>xamining inevitable <span style=\"color:red;\">i</span>ssues, <span style=\"color:red;\">m</span>aintaining <span style=\"color:red;\">s</span>ignificant focus on <span style=\"color:red;\">n</span>eural <span style=\"color:red;\">a</span>lgorithms with <span style=\"color:red;\">e</span>xplicit methods for <span style=\"color:red;\">i</span>dentifying <span style=\"color:red;\">a</span>rchitecture flaws, <span style=\"color:red;\">t</span>ackling complex <span style=\"color:red;\">p</span>roblems, <span style=\"color:red;\">a</span>nalyzing <span style=\"color:red;\">p</span>redicted <span style=\"color:red;\">p</span>robabilities, and <span style=\"color:red;\">i</span>ncorporating <span style=\"color:red;\">g</span>rammatically sound <span style=\"color:red;\">p</span>rinciples with clear <span style=\"color:red;\">i</span>ndices.",
-    "original": "The curriculum represents the pinnacle, conquering challenges, revolutionizing fictional scenarios, delving into accessibility, examining inevitable issues, maintaining significant focus on neural algorithms with explicit methods for identifying architecture flaws, tackling complex problems, analyzing predicted probabilities, and incorporating grammatically sound principles with clear indices.",
-    "translation": "课程代表了顶峰，征服了挑战，革新了虚构场景，深入探讨了可及性，审视了不可避免的问题，专注于神经算法，明确识别建筑缺陷，解决复杂问题，分析预测的概率，并纳入语法正确的原则和明确的索引。",
-    "phonetic": "[ðə kəˈrɪkjʊləm rɪˈprɛzənts ðə ˈpɪnəkl, ˈkɒŋkərɪŋ ˈtʃælɪndʒɪz, ˌrɛvəˈluːʃəˌnaɪzɪŋ ˈfɪkʃənəl sɪˈnɑːriəʊz, ˈdɛlvɪŋ ˈɪntuː ækˌsɛsəˈbɪlɪti, ɪɡˈzæmɪnɪŋ ɪnˈɛvɪtəbl ˈɪʃuːz, meɪnˈteɪnɪŋ ˈsɪɡnɪfɪkənt ˈfəʊkəs ɒn ˈnjʊərəl ˈælɡəˌrɪðəmz wɪð ɪkˈsplɪsɪt ˈmɛθədz fə ˌaɪˈdɛntɪfaɪɪŋ ˈɑːkɪˌtɛkʧə flɔːz, ˈtæklɪŋ ˈkɒmplɛks ˈprɒbləmz, əˈnælaɪzɪŋ prɪˈdɪktɪd prəˌbæbɪˈlɪtiz, ənd ˌɪnkɔːˈpɔːreɪtɪŋ ˌɡræməˈtɪkli saʊnd ˈprɪnsəpəlz wɪð klɪər ˈɪndɪsiz]"
+    "sentence": "The curriculum represents the pinnacle, conquering challenges.",
+    "original": "The curriculum represents the pinnacle, conquering challenges.",
+    "translation": "课程代表了顶峰，征服了挑战。",
+    "phonetic": "[ðə kəˈrɪkjələm rɪˈprɛzənts ðə ˈpɪnəkl, ˈkɒŋkərɪŋ ˈtʃælɪndʒɪz]",
+    "emphasized": ["T", "c", "r", "p", "c"]
+  },
+  {
+    "sentence": "Revolutionizing fictional scenarios, delving into accessibility.",
+    "original": "Revolutionizing fictional scenarios, delving into accessibility.",
+    "translation": "革新了虚构场景，深入探讨了可及性。",
+    "phonetic": "[ˌrɛvəˈluːʃəˌnaɪzɪŋ ˈfɪkʃənəl sɪˈnɑːriəʊz, ˈdɛlvɪŋ ˈɪntuː ækˌsɛsəˈbɪlɪti]",
+    "emphasized": ["r", "f", "s", "d", "a"]
+  },
+  {
+    "sentence": "Examining inevitable issues, maintaining significant focus on neural algorithms.",
+    "original": "Examining inevitable issues, maintaining significant focus on neural algorithms.",
+    "translation": "审视了不可避免的问题，专注于神经算法。",
+    "phonetic": "[ɪɡˈzæmɪnɪŋ ɪnˈɛvɪtəbl ˈɪʃuːz, meɪnˈteɪnɪŋ ˈsɪɡnɪfɪkənt ˈfəʊkəs ɒn ˈnjʊərəl ˈælɡəˌrɪðəmz]",
+    "emphasized": ["e", "i", "i", "m", "s"]
+  },
+  {
+    "sentence": "With explicit methods for identifying architecture flaws.",
+    "original": "With explicit methods for identifying architecture flaws.",
+    "translation": "明确识别建筑缺陷。",
+    "phonetic": "[wɪð ɪkˈsplɪsɪt ˈmɛθədz fə ˌaɪˈdɛntɪfaɪɪŋ ˈɑːkɪˌtɛkʧə flɔːz]",
+    "emphasized": ["e", "m", "i", "a"]
+  },
+  {
+    "sentence": "Tackling complex problems, analyzing predicted probabilities.",
+    "original": "Tackling complex problems, analyzing predicted probabilities.",
+    "translation": "解决复杂问题，分析预测的概率。",
+    "phonetic": "[ˈtæklɪŋ ˈkɒmplɛks ˈprɒbləmz, əˈnælaɪzɪŋ prɪˈdɪktɪd prəˌbæbɪˈlɪtiz]",
+    "emphasized": ["t", "c", "p", "a", "p"]
+  },
+  {
+    "sentence": "Incorporating grammatically sound principles with clear indices.",
+    "original": "Incorporating grammatically sound principles with clear indices.",
+    "translation": "并纳入语法正确的原则和明确的索引。",
+    "phonetic": "[ˌɪnkɔːˈpɔːreɪtɪŋ ˌɡræməˈtɪkli saʊnd ˈprɪnsəpəlz wɪð klɪər ˈɪndɪsiz]",
+    "emphasized": ["i", "g", "p", "i"]
   }
 
 ]

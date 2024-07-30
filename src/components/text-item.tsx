@@ -8,7 +8,7 @@ const { Text } = Typography;
 
 
 
-export default function Item({ v , enanbleDelay ,sound ,times , delay,label ,s, p, t, playing,  onPlayEnd, index }: any) {
+export default function Item({ v , enanbleDelay ,sound ,times , delay,label ,s, p, t, playing,  onPlayEnd, index, rate }: any) {
 
   const audioRef = useRef<any>(null);
   const [playCount, setPlayCount] = useState(0);
@@ -24,15 +24,17 @@ export default function Item({ v , enanbleDelay ,sound ,times , delay,label ,s, 
       if( audioRef.current) {
         audioRef.current.src = `/api/text?s=${s}&v=${v}`;  // 改变音频源
         audioRef.current.load();              // 重新载入音频文件
+        audioRef.current.playbackRate = rate;
       }
  
        
-    }, [s,v ]);
+    }, [s,v, rate ]);
 
 
   useEffect(() => {
     if(!audioRef.current.currentTime && playing) {
       audioRef.current.load(); 
+      audioRef.current.playbackRate = rate;
       audioRef.current.addEventListener('loadeddata', function() {
         console.log('Audio data loaded');
         // 你可以在这里执行任何需要的回调操作
@@ -43,6 +45,7 @@ export default function Item({ v , enanbleDelay ,sound ,times , delay,label ,s, 
       if(!playing) {
         audioRef.current.load(); 
         timeRef.current = 0 ;
+        audioRef.current.playbackRate = rate;
         audioRef.current.pause();
         audioRef.current.currentTime = 0;
         setIsPlaying(false);
@@ -69,6 +72,7 @@ export default function Item({ v , enanbleDelay ,sound ,times , delay,label ,s, 
         }
         setIsPlaying(false);
         setPlayCount(0)
+        audioRef.current.playbackRate = rate;
         audioRef.current.currentTime = 0;
         setIsWaite(false)
         audioRef.current.pause();
@@ -77,6 +81,7 @@ export default function Item({ v , enanbleDelay ,sound ,times , delay,label ,s, 
       } else {
         setPlayCount(playCount + 1);
         setIsPlaying(true);
+        audioRef.current.playbackRate = rate;
         audioRef.current.play();
       }
 
@@ -104,15 +109,17 @@ export default function Item({ v , enanbleDelay ,sound ,times , delay,label ,s, 
           timeRef.current = new Date().getTime();
           setPlayCount(playCount + 1);
           audioRef.current.play();
+          audioRef.current.playbackRate = rate;
         } else {
           timeRef.current = 0 ;
           setIsPlaying(false);
           setIsWaite(false)
           setPlayCount(0)
+          audioRef.current.playbackRate = rate;
           if(onPlayEnd) onPlayEnd(index)
     
         }
-      },  !enanbleDelay ?  maxCount *  time : (maxCount ? maxCount * (time +  ((delay || 0) * 1000 + 2000)) :  ((delay || 0) * 1000 + 2000)));
+      },  (!enanbleDelay ?  maxCount *  time : (maxCount ? maxCount * (time +  ((delay || 0) * 1000 + 2000)) :  ((delay || 0) * 1000 + 2000)))/rate);
     // }
     // else {
     //   timeRef.current = 0 ;
@@ -130,7 +137,7 @@ export default function Item({ v , enanbleDelay ,sound ,times , delay,label ,s, 
 
   return <Card className='!text-xl' ref={myRef}>
 
-      <audio  onEnded={handleEnded} onLoadedMetadata={handleLoadedMetadata} ref={audioRef}  />
+      <audio   onEnded={handleEnded} onLoadedMetadata={handleLoadedMetadata} ref={audioRef}  />
       <div onMouseUp={(e)=> {
            if(!window || !window.getSelection) return 
             var selectedText = (window as any).getSelection().toString();
