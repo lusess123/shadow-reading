@@ -110,7 +110,7 @@ function Page() {
             label: k
           }
         })}></Select>
-          <Select value={rate} onChange={(v:number)=> { 
+          <Select value={rate}  className='w-[75px]' onChange={(v:number)=> { 
           setRate(v)
           localStorage.setItem('rate', v.toString());
          }} options={[
@@ -121,6 +121,14 @@ function Page() {
           {
             value: 1,
             label: '1x'
+          },
+          {
+            value: 1.12,
+            label: '1.12x'
+          },
+          {
+            value: 1.25,
+            label: '1.25x'
           },
           {
             value: 1.5,
