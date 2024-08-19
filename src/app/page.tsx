@@ -7,10 +7,12 @@ import { AudioMutedOutlined, SoundOutlined } from '@ant-design/icons'
 import VoiceSlect from '@/components/voice'
 import NoSleep from 'nosleep.js';
 import Course1 from './cource.json'
+import { sentences as Egg} from './source/egg'
 
 const textes : Record<string, typeof sentences>   = {
     'co' : sentences,
-    'genAI1': Course1
+    'genAI1': Course1,
+    'egg' : Egg
 } 
 
 // let preventSleepInterval: any = null;
