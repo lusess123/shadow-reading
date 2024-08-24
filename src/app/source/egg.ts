@@ -160,5 +160,26 @@ export const sentences: {
 ]
 
       
-  )
+  ).concat(
+[
+  {
+    "sentence": "\"A re<span style=\\\"color:red;\\\">m</span>arkable <span style=\\\"color:red;\\\">f</span>etus was reincarnated into a gigantic vessel, but nonetheless felt utterly shatte<span style=\\\"color:red;\\\">r</span>ed, as its consciousness, though <span style=\\\"color:red;\\\">m</span>ature, still ca<span style=\\\"color:red;\\\">r</span>ried a vague authority;\"",
+    "original": "A remarkable fetus was reincarnated into a gigantic vessel, but nonetheless felt utterly shattered, as its consciousness, though mature, still carried a vague authority;",
+    "translation": "一个非凡的胎儿被转世到了一个巨大的容器中，但尽管如此，它依然感到彻底的破碎，因为它的意识虽然成熟，但仍然带有一种模糊的权威感；",
+    "phonetic": "[ə rɪˈmɑːkəbl ˈfiːtəs wəz ˌriːɪnˈkɑːneɪtɪd ˈɪntuː ə dʒaɪˈɡæntɪk ˈvɛsl, bʌt ˈnʌnðəlɛs fɛlt ˈʌtərli ˈʃætəd, æz ɪts ˈkɒnʃəsnɪs, ðəʊ mətjʊə, stɪl ˈkærɪd ə veɪɡ ɔːˈθɒrɪti;]"
+  },
+  {
+    "sentence": "\"it was appa<span style=\\\"color:red;\\\">l</span>led by past incarnations, and conte<span style=\\\"color:red;\\\">m</span>ptuous of the fascination that had victimized it,\"",
+    "original": "it was appalled by past incarnations, and contemptuous of the fascination that had victimized it,",
+    "translation": "它对过去的轮回感到震惊，并对那曾令它着迷的东西感到轻蔑，",
+    "phonetic": "[ɪt wəz əˈpɔːld baɪ pɑːst ˌɪnkɑːˈneɪʃənz, ænd kənˈtɛmptjʊəs ɒv ðə ˌfæsɪˈneɪʃən ðæt hæd ˈvɪktɪmaɪzd ɪt,]"
+  },
+  {
+    "sentence": "\"finding only consolation in the avail of no longer <span style=\\\"color:red;\\\">m</span>incing words while it strolled through the <span style=\\\"color:red;\\\">m</span>agnificent slate of its new existence.\"",
+    "original": "finding only consolation in the avail of no longer mincing words while it strolled through the magnificent slate of its new existence.",
+    "translation": "它唯一的安慰就是在它漫步于新生命壮丽的石板上时，不再需要拐弯抹角地表达自己。",
+    "phonetic": "[ˈfaɪndɪŋ ˈəʊnli ˌkɒnsəˈleɪʃən ɪn ðə əˈveɪl ɒv nəʊ ˈlɒŋɡə ˈmɪnsɪŋ wɜːdz waɪl ɪt strəʊld θruː ðə mæɡˈnɪfɪsənt sleɪt ɒv ɪts njuː ɪɡˈzɪstəns.]"
+  }
+]
+)
   
