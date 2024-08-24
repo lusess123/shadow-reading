@@ -1,4 +1,4 @@
-FROM node:20-alpine AS build
+FROM dockerhub.icu/library/node:20-alpine AS build
 WORKDIR /app
 COPY package*.json ./
 # COPY .env.local ./
