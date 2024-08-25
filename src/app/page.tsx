@@ -8,11 +8,13 @@ import VoiceSlect from '@/components/voice'
 import NoSleep from 'nosleep.js';
 import Course1 from './cource.json'
 import { sentences as Egg} from './source/egg'
+import Gukong from './source/gukong.json'
 
 const textes : Record<string, typeof sentences>   = {
     'co' : sentences,
     'genAI1': Course1,
-    'egg' : Egg
+    'egg' : Egg,
+    'gukong': Gukong
 } 
 
 // let preventSleepInterval: any = null;
