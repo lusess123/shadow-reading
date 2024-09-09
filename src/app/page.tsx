@@ -9,12 +9,14 @@ import NoSleep from 'nosleep.js';
 import Course1 from './cource.json'
 import { sentences as Egg} from './source/egg'
 import Gukong from './source/gukong.json'
+import Isha from './source/isha.json'
 
 const textes : Record<string, typeof sentences>   = {
     'co' : sentences,
     'genAI1': Course1,
     'egg' : Egg,
-    'gukong': Gukong
+    'gukong': Gukong,
+    'isha': Isha
 } 
 
 // let preventSleepInterval: any = null;
