@@ -1,13 +1,15 @@
 # shellcheck disable=SC2148
 
+docker build -t shadow-reading .
 
-
-docker build -t shadow-reading  .
-
-containers=$(docker ps -a | grep shadow-reading | awk '{print $1}')
+containers=$(docker ps -a --filter "ancestor=shadow-reading" --format "{{.ID}}")
 if [ -n "$containers" ]; then
-  echo "$containers" | xargs docker rm -f
+  docker rm -f $(echo "$containers")
 fi
 
-# shellcheck disable=SC2046
-docker run -d  -p 3050:3000  -v $(pwd)/audio_cache:/app/audio_cache shadow-reading --name shadow-reading
+# Remove any existing container with the same name
+if docker ps -a --filter "name=shadow-reading1" --format '{{.Names}}' | grep -w shadow-reading1; then
+  docker rm -f shadow-reading1
+fi
+
+docker run -d --name shadow-reading1 -p 3050:3000 -v $(pwd)/audio_cache:/app/audio_cache shadow-reading
