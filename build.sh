@@ -10,4 +10,4 @@ if [ -n "$containers" ]; then
 fi
 
 # shellcheck disable=SC2046
-docker run -d  -p 3050:3000  -v $(pwd)/audio_cache:/app/audio_cache shadow-reading shadow-reading1
+docker run -d  -p 3050:3000  -v $(pwd)/audio_cache:/app/audio_cache shadow-reading --name shadow-reading
