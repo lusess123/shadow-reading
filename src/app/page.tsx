@@ -141,6 +141,10 @@ function Page() {
             label: '1.5x'
           },
           {
+            value: 1.75,
+            label: '1.75x'
+          },
+          {
             value: 2,
             label: '2x'
           }
