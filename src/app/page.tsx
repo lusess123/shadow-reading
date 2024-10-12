@@ -10,13 +10,15 @@ import Course1 from './cource.json'
 import { sentences as Egg} from './source/egg'
 import Gukong from './source/gukong.json'
 import Isha from './source/isha.json'
+import Genuis from './source/genius.json'
 
 const textes : Record<string, typeof sentences>   = {
     'co' : sentences,
     'genAI1': Course1,
     'egg' : Egg,
     'gukong': Gukong,
-    'isha': Isha
+    'isha': Isha,
+    'Genuis': Genuis
 } 
 
 // let preventSleepInterval: any = null;
@@ -139,6 +141,14 @@ function Page() {
           {
             value: 1.5,
             label: '1.5x'
+          },
+          {
+            value: 1.55,
+            label: '1.55x'
+          },
+          {
+            value: 1.6,
+            label: '1.6x'
           },
           {
             value: 1.75,
