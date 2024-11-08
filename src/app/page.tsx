@@ -11,6 +11,7 @@ import { sentences as Egg} from './source/egg'
 import Gukong from './source/gukong.json'
 import Isha from './source/isha.json'
 import Genuis from './source/genius.json'
+import tramp from './source/tranpu'
 
 const textes : Record<string, typeof sentences>   = {
     'co' : sentences,
@@ -18,7 +19,8 @@ const textes : Record<string, typeof sentences>   = {
     'egg' : Egg,
     'gukong': Gukong,
     'isha': Isha,
-    'Genuis': Genuis
+    'Genuis': Genuis,
+    tramp
 } 
 
 // let preventSleepInterval: any = null;
