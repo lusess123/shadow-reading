@@ -16,9 +16,9 @@ const a = [
 
   const b = [
     {
-      "sentence": "And Frank, this was, I believe, the greatest political movement of all time. There's never been anything like this in this country and maybe beyond.",
-      "original": "And Frank, this was, I believe, the greatest political movement of all time. There's never been anything like this in this country and maybe beyond.",
-      "translation": "而且，弗兰克，我相信这是有史以来最伟大的政治运动。在这个国家，甚至可能在更广范围内，从未有过这样的事情。",
+      "sentence": "And frankly, this was, I believe, the greatest political movement of all time. There's never been anything like this in this country and maybe beyond.",
+      "original": "And frankly, this was, I believe, the greatest political movement of all time. There's never been anything like this in this country and maybe beyond.",
+      "translation": "而且，坦率的说，我相信这是有史以来最伟大的政治运动。在这个国家，甚至可能在更广范围内，从未有过这样的事情。",
       "phonetic": "[ænd fræŋk, ðɪs wɒz, aɪ bɪˈliːv, ðə ˈgreɪtɪst pəˈlɪtɪkəl ˈmuːvmənt ɒv ɔːl taɪm. ðɛrz ˈnɛvər bɪn ˈɛnɪθɪŋ laɪk ðɪs ɪn ðɪs ˈkʌntri ænd ˈmeɪbi bɪˈjɒnd.]"
     },
     {
@@ -266,4 +266,4 @@ const h = [
     }
   ]
   
-  export default a.concat(b, c , d, e, f, g ,h ,i ,j, j, k)
+  export default a.concat(b, c , d, e, f, g )
