@@ -20,7 +20,7 @@ RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
 
 # 创建和激活虚拟环境，然后安装 edge-tts
 RUN python3 -m venv venv && \
-    ./venv/bin/pip install  --upgrade edge-tts -i https://pypi.tuna.tsinghua.edu.cn/simple
+    ./venv/bin/pip install  --upgrade edge-tts -i 
 
 ENV PYTHON_ENV='cd /app &&  source ./venv/bin/activate &&'
 
