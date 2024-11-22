@@ -12,6 +12,7 @@ import Gukong from './source/gukong.json'
 import Isha from './source/isha.json'
 import Genuis from './source/genius.json'
 import tramp from './source/tranpu'
+import buzhang from './source/bz'
 
 const textes : Record<string, typeof sentences>   = {
     'co' : sentences,
@@ -20,7 +21,7 @@ const textes : Record<string, typeof sentences>   = {
     'gukong': Gukong,
     'isha': Isha,
     'Genuis': Genuis,
-    tramp
+    tramp,buzhang
 } 
 
 // let preventSleepInterval: any = null;
