@@ -21,7 +21,7 @@ const textes : Record<string, typeof sentences>   = {
     'gukong': Gukong,
     'isha': Isha,
     'Genuis': Genuis,
-    tramp,buzhang
+    tramp, "脑洞部长" : buzhang
 } 
 
 // let preventSleepInterval: any = null;
