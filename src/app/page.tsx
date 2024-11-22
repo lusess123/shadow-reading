@@ -21,7 +21,8 @@ const textes : Record<string, typeof sentences>   = {
     'gukong': Gukong,
     'isha': Isha,
     'Genuis': Genuis,
-    tramp, "脑洞部长" : buzhang
+    tramp, 
+    "脑洞部长" : buzhang
 } 
 
 // let preventSleepInterval: any = null;
@@ -183,7 +184,7 @@ function Page() {
 
         }}>{delay ? "有延迟" : "没有延迟"}</Button>
       </Space>
-      { textes[content].map((item, index) => {
+      { textes[content]?.map((item, index) => {
         return     <Item  onPlayEnd={(i: number) => {
           if(i < textes[content].length) {
             const news = textes[content][i + 1].sentence
