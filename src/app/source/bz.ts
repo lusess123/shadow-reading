@@ -195,5 +195,69 @@ const list2 = [
     }
   ]
 
-  export default list1.concat(list2)
+  const list3 = [
+    {
+      "sentence": "I'm not just tired. I'm exhausted.",
+      "original": "I'm not just tired. I'm exhausted.",
+      "translation": "我不仅累，我是精疲力尽。",
+      "phonetic": "/aɪm nɒt ʤʌst ˈtaɪəd aɪm ɪɡˈzɔːstɪd/"
+    },
+    {
+      "sentence": "Everything hurts.",
+      "original": "Everything hurts.",
+      "translation": "全身上下都疼。",
+      "phonetic": "/ˈɛvrɪθɪŋ hɜːts/"
+    },
+    {
+      "sentence": "I get up in the morning to do this job I don't even like.",
+      "original": "I get up in the morning to do this job I don't even like.",
+      "translation": "我早上起来去做一份我根本不喜欢的工作。",
+      "phonetic": "/aɪ ɡɛt ʌp ɪn ðə ˈmɔːnɪŋ tə du ðɪs ʤɒb aɪ doʊnt ˈiːvən laɪk/"
+    },
+    {
+      "sentence": "And I'm doing it just for the money, and it's not even a lot of money.",
+      "original": "And I'm doing it just for the money, and it's not even a lot of money.",
+      "translation": "我工作只是为了钱，可钱还少得可怜。",
+      "phonetic": "/ænd aɪm ˈduːɪŋ ɪt ʤʌst fə ðə ˈmʌni ænd ɪts nɒt ˈiːvən ə lɒt əv ˈmʌni/"
+    },
+    {
+      "sentence": "I keep trying harder and harder, and it doesn't even make a difference.",
+      "original": "I keep trying harder and harder, and it doesn't even make a difference.",
+      "translation": "我每天都付出更多努力，但情况完全没有改变。",
+      "phonetic": "/aɪ kiːp ˈtraɪɪŋ ˈhɑːdər ænd ˈhɑːdər ænd ɪt ˈdʌznt ˈiːvən ˈmeɪk ə ˈdɪfərəns/"
+    },
+    {
+      "sentence": "So if you're going to yell at me or punish me, let's just get it over with.",
+      "original": "So if you're going to yell at me or punish me, let's just get it over with.",
+      "translation": "所以如果你要骂我或惩罚我，就赶紧完了事。",
+      "phonetic": "/soʊ ɪf jʊər ˈɡoʊɪŋ tə ˈjɛl ət miː ɔː ˈpʌnɪʃ miː lɛts ʤʌst ˈɡɛt ɪt ˈoʊvər wɪð/"
+    },
+    {
+      "sentence": "Did I ever tell you I grew up poor?",
+      "original": "Did I ever tell you I grew up poor?",
+      "translation": "我有没有告诉过你我成长于一个贫困的家庭？",
+      "phonetic": "/dɪd aɪ ˈɛvər ˈtɛl ju aɪ ˈɡruː ʌp pʊər/"
+    },
+    {
+      "sentence": "My whole family was treated like trash.",
+      "original": "My whole family was treated like trash.",
+      "translation": "我全家都被当垃圾一样对待。",
+      "phonetic": "/maɪ hoʊl ˈfæmɪli wəz ˈtriːtɪd laɪk træʃ/"
+    },
+    {
+      "sentence": "So one day I asked God to make me rich and beautiful.",
+      "original": "So one day I asked God to make me rich and beautiful.",
+      "translation": "所以有一天，我请求上帝让我变得富有和美丽。",
+      "phonetic": "/soʊ wʌn deɪ aɪ ˈæskt ɡɒd tə ˈmeɪk miː ˈrɪʧ ænd ˈbjuːtəfʊl/"
+    },
+    {
+      "sentence": "So people would envy me.",
+      "original": "So people would envy me.",
+      "translation": "这样人们就会羡慕我。",
+      "phonetic": "/soʊ ˈpiːpl wʊd ˈɛnviː miː/"
+    }
+  ]
+  
+
+  export default list1.concat(list2).concat(list3)
   
