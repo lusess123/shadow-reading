@@ -1,16 +1,10 @@
 const list1 = [
-    {
-      "sentence": "So what are you gonna do?",
-      "original": "So what are you gonna do?",
-      "translation": "所以你打算做什么？",
-      "phonetic": "[soʊ wʌt ər ju ˈɡɒnə duː]"
-    },
-    {
-      "sentence": "What do you want to know?",
-      "original": "What do you want to know?",
-      "translation": "你想知道什么？",
-      "phonetic": "[wʌt də ju wɒnt tə noʊ]"
-    },
+  {
+    "sentence": "So what are you gonna do? What do you want to know?",
+    "original": "So what are you gonna do? What do you want to know?",
+    "translation": "所以你打算做什么？你想知道什么？",
+    "phonetic": "[soʊ wʌt ər ju ˈɡɒnə duː? wʌt də ju wɒnt tə noʊ?]"
+  },
     {
       "sentence": "Yeah, I think we should talk about that.",
       "original": "Yeah, I think we should talk about that.",
@@ -124,12 +118,6 @@ const list1 = [
       "original": "I’ll think about it.",
       "translation": "我会考虑的。",
       "phonetic": "[aɪl ˈθɪŋk əˈbaʊt ɪt]"
-    },
-    {
-      "sentence": "Thank you, baby.",
-      "original": "Thank you, baby.",
-      "translation": "谢谢你，宝贝。",
-      "phonetic": "[θæŋk ju ˈbeɪbi]"
     },
     {
       "sentence": "Guilt and jealousy in the same day, I slept hard that night.",
@@ -257,7 +245,59 @@ const list2 = [
       "phonetic": "/soʊ ˈpiːpl wʊd ˈɛnviː miː/"
     }
   ]
+
+  const list4 = [
+    {
+      "sentence": "Take One and pass it back. As you all know, this test'll count for 25% of your final grade.",
+      "original": "Take One and pass it back. As you all know, this test'll count for 25% of your final grade.",
+      "translation": "拿一个并传回。正如你们所知道的，这次测试将占你最终成绩的25%。",
+      "phonetic": "[teɪk wʌn ənd pæs ɪt bæk. æz ju ɔːl noʊ, ðɪs tɛstl kaʊnt fɔːr 25% əv jɔːr ˈfaɪnəl ɡreɪd]"
+    },
+    {
+      "sentence": "Be sure to show all your work. If you get stuck on a question, move on and come back to it at the end.",
+      "original": "Be sure to show all your work. If you get stuck on a question, move on and come back to it at the end.",
+      "translation": "确保展示你所有的工作。如果你在某个问题上卡住，继续前进，最后再回到它。",
+      "phonetic": "[biː ʃʊr tu ʃoʊ ɔːl jɔːr wɜːrk. ɪf ju ɡɛt stʌk ɑn ə ˈkwɛstʃən, muːv ɒn ənd kʌm bæk tu ɪt æt ðə ɛnd]"
+    },
+    {
+      "sentence": "And I shouldn't have to say this, but if there's any cheating, I will see it.",
+      "original": "And I shouldn't have to say this, but if there's any cheating, I will see it.",
+      "translation": "我不应该说这个，但如果有任何作弊，我会看到的。",
+      "phonetic": "[ænd aɪ ˈʃʊdnt hæv tu seɪ ðɪs, bʌt ɪf ðɛrz ˈɛni ˈʧiːtɪŋ, aɪ wɪl siː ɪt]"
+    },
+    {
+      "sentence": "I got eyes in the back of my head. I got more eyes than a potato.",
+      "original": "I got eyes in the back of my head. I got more eyes than a potato.",
+      "translation": "我的脑后有眼睛。我有比土豆更多的眼睛。",
+      "phonetic": "[aɪ ɡɒt aɪz ɪn ðə bæk əv maɪ hɛd. aɪ ɡɒt mɔːr aɪz ðæn ə pəˈteɪtoʊ]"
+    },
+    {
+      "sentence": "Ms. Ingram? —-Yeah. Sheldon. I'm done. What? I enjoyed it very much.",
+      "original": "Ms. Ingram? —-Yeah. Sheldon. I'm done. What? I enjoyed it very much.",
+      "translation": "英格拉姆女士？— 是的，谢尔顿。我完成了。什么？我非常享受。",
+      "phonetic": "[mɪz ˈɪŋɡræm? — jɛə, ˈʃɛldən. aɪm dʌn. wʌt? aɪ ɪnˈdʒɔɪd ɪt vɛri mʌʧ]"
+    },
+    {
+      "sentence": "I'll take another if you have one. No, I don't have another one. Just read ahead in the textbook.",
+      "original": "I'll take another if you have one. No, I don't have another one. Just read ahead in the textbook.",
+      "translation": "如果你有，我会再拿一个。不，我没有另一个。只需在课本中提前阅读。",
+      "phonetic": "[aɪl teɪk əˈnʌðər ɪf ju hæv wʌn. noʊ, aɪ doʊnt hæv əˈnʌðər wʌn. dʒʌst riːd əˈhɛd ɪn ðə ˈtɛkstbʊk]"
+    },
+    {
+      "sentence": "Oh, boy. Where's your dad? His car's gone. Uh, he and Renee went out to dinner.",
+      "original": "Oh, boy. Where's your dad? His car's gone. Uh, he and Renee went out to dinner.",
+      "translation": "哦，天哪。你爸爸在哪里？他的车不见了。嗯，他和雷妮出去吃晚饭了。",
+      "phonetic": "[oʊ, bɔɪ. wɛrz jɔːr dæd? hɪz kɑːrz ɡɒn. ʌ, hiː ənd rɪˈneɪ wɛnt aʊt tuː ˈdɪnər]"
+    },
+    {
+      "sentence": "He and Renee? Yeah, they went to that French restaurant dad likes. They said you could join them if you want.",
+      "original": "He and Renee? Yeah, they went to that French restaurant dad likes. They said you could join them if you want.",
+      "translation": "他和雷妮？是的，他们去了爸爸喜欢的那家法国餐厅。他们说你可以加入他们，如果你愿意的话。",
+      "phonetic": "[hiː ənd rɪˈneɪ? jɛə, ðeɪ wɛnt tuː ðæt frɛntʃ ˈrɛstərɒnt dæd laɪks. ðeɪ sɛd ju kʊd dʒɔɪn ðɛm ɪf ju wɑːnt]"
+    }
+  ]
+  
   
 
-  export default list1.concat(list2).concat(list3)
+  export default list1.concat(list2).concat(list3).concat(list4);
   
