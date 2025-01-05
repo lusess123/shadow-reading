@@ -15,6 +15,7 @@ import tramp from './source/tranpu'
 import buzhang from './source/bz'
 import Peter from './source/peter'
 import TakeMe from './source/takeme'
+import Silent from './source/silent'
 
 const textes : Record<string, typeof sentences>   = {
     'co' : sentences,
@@ -26,7 +27,8 @@ const textes : Record<string, typeof sentences>   = {
     tramp, 
     "脑洞部长" : buzhang,
     "彼得潘" : Peter,
-    "吻别" : TakeMe
+    "吻别" : TakeMe,
+    "寂静之声" : Silent
 } 
 
 // let preventSleepInterval: any = null;
