@@ -119,7 +119,7 @@ function Page() {
   return (
     <div style={{height: '8000px'}}>
       <Space className='w-full  flex-wrap  justify-center items-center p-4'>
-        <Select value={content} onChange={(v)=> { 
+        <Select size='large' style={{minWidth:'50%'}} value={content} onChange={(v)=> { 
           setContent(v)
           localStorage.setItem('content', v);
          }} options={Object.keys(textes).map( k => {
@@ -128,7 +128,7 @@ function Page() {
             label: k
           }
         })}></Select>
-          <Select value={rate}  className='w-[75px]' onChange={(v:number)=> { 
+          <Select value={rate}  size='large' className='w-[75px]' onChange={(v:number)=> { 
           setRate(v)
           localStorage.setItem('rate', v.toString());
          }} options={[
@@ -175,7 +175,7 @@ function Page() {
         }
          
           }></VoiceSlect>
-      <Button onClick={()=>{
+      <Button  size='large'  onClick={()=>{
           setPlaying(textes[content][0].sentence)
          
       }}>播放</Button>
@@ -183,7 +183,7 @@ function Page() {
          setSound(!sound)
          
       }}>声音 {sound ? <SoundOutlined /> : <AudioMutedOutlined />}</Button>
-      <InputNumber value={times} onChange={(val) => setTimes(val || 0)}></InputNumber>
+      <InputNumber size='large' value={times} onChange={(val) => setTimes(val || 0)}></InputNumber>
       <Button onClick={()=>  { 
         localStorage.setItem('delay', !delay + '');
         setDelay(!delay)
