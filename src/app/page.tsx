@@ -16,6 +16,7 @@ import buzhang from './source/bz'
 import Peter from './source/peter'
 import TakeMe from './source/takeme'
 import Silent from './source/silent'
+import bz2 from './source/bz2'
 
 const textes : Record<string, typeof sentences>   = {
     'co' : sentences,
@@ -26,6 +27,7 @@ const textes : Record<string, typeof sentences>   = {
     'Genuis': Genuis,
     tramp, 
     "脑洞部长" : buzhang,
+    "脑洞部长2" : bz2,
     "彼得潘" : Peter,
     "吻别" : TakeMe,
     "寂静之声" : Silent
