@@ -119,7 +119,7 @@ function Page() {
   return (
     <div style={{height: '8000px'}}>
       <Space className='w-full  flex-wrap  justify-center items-center p-4'>
-        <Select size='large' style={{minWidth:'50%'}} value={content} onChange={(v)=> { 
+        <Select size='large' style={{minWidth:200}} value={content} onChange={(v)=> { 
           setContent(v)
           localStorage.setItem('content', v);
          }} options={Object.keys(textes).map( k => {
