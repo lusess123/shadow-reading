@@ -21,46 +21,22 @@ const list = [
 
   const list2 = [
     {
-      "sentence": "How many roads must a man walk down before you can call him a man? How many seas must a white dove sail before she sleeps in the sand?",
-      "original": "How many roads must a man walk down before you can call him a man? How many seas must a white dove sail before she sleeps in the sand?",
-      "translation": "一个人要走多少条路才能被称作‘人’？一只白鸽要飞过多少海洋才能在沙滩上栖息？",
-      "phonetic": "[haʊ ˈmɛni roʊdz mʌst ə mæn wɔːk daʊn bɪˈfɔːr ju kæn kɔːl hɪm ə mæn? haʊ ˈmɛni siːz mʌst ə waɪt dʌv seɪl bɪˈfɔːr ʃi sliːps ɪn ðə sænd?]"
+      "sentence": "How many roads must a man walk down before you can call him a man? How many seas must a white dove sail before she sleeps in the sand? Yes, how many times must the cannon balls fly before they're forever banned?",
+      "original": "How many roads must a man walk down before you can call him a man? How many seas must a white dove sail before she sleeps in the sand? Yes, how many times must the cannon balls fly before they're forever banned?",
+      "translation": "一个人要走多少条路才能被称作‘人’？一只白鸽要飞过多少海洋才能在沙滩上栖息？是的，大炮的炮弹要飞多少次才能永远被禁止？",
+      "phonetic": "[haʊ ˈmɛni roʊdz mʌst ə mæn wɔːk daʊn bɪˈfɔːr ju kæn kɔːl hɪm ə mæn? haʊ ˈmɛni siːz mʌst ə waɪt dʌv seɪl bɪˈfɔːr ʃi sliːps ɪn ðə sænd? jɛs, haʊ ˈmɛni taɪmz mʌst ðə ˈkænən bɔːlz flaɪ bɪˈfɔːr ðeər fɔːˈɛvər bænd?]"
     },
     {
-      "sentence": "Yes, how many times must the cannon balls fly before they're forever banned?",
-      "original": "Yes, how many times must the cannon balls fly before they're forever banned?",
-      "translation": "是的，大炮的炮弹要飞多少次才能永远被禁止？",
-      "phonetic": "[jɛs, haʊ ˈmɛni taɪmz mʌst ðə ˈkænən bɔːlz flaɪ bɪˈfɔːr ðeər fɔːˈɛvər bænd?]"
+      "sentence": "The answer my friend is blowin' in the wind, the answer is blowin' in the wind. Yes, how many years can a mountain exist before it's washed to the sea? Yes, how many years can some people exist before they're allowed to be free?",
+      "original": "The answer my friend is blowin' in the wind, the answer is blowin' in the wind. Yes, how many years can a mountain exist before it's washed to the sea? Yes, how many years can some people exist before they're allowed to be free?",
+      "translation": "答案，我的朋友，就在风中飘荡，答案就在风中飘荡。是的，一座山能存在多少年才会被冲刷到海里？是的，一些人能存在多少年才能获得自由？",
+      "phonetic": "[ði ˈænsər maɪ frɛnd ɪz ˈbloʊɪn ɪn ðə wɪnd, ði ˈænsər ɪz ˈbloʊɪn ɪn ðə wɪnd. jɛs, haʊ ˈmɛni jɪərz kæn ə ˈmaʊntən ɪɡˈzɪst bɪˈfɔːr ɪts wɒʃt tə ðə siː? jɛs, haʊ ˈmɛni jɪərz kæn sʌm ˈpiːpl ɪɡˈzɪst bɪˈfɔːr ðeər əˈlaʊd tə biː friː?]"
     },
     {
-      "sentence": "The answer my friend is blowin' in the wind, the answer is blowin' in the wind.",
-      "original": "The answer my friend is blowin' in the wind, the answer is blowin' in the wind.",
-      "translation": "答案，我的朋友，就在风中飘荡，答案就在风中飘荡。",
-      "phonetic": "[ði ˈænsər maɪ frɛnd ɪz ˈbloʊɪn ɪn ðə wɪnd, ði ˈænsər ɪz ˈbloʊɪn ɪn ðə wɪnd.]"
-    },
-    {
-      "sentence": "Yes, how many years can a mountain exist before it's washed to the sea? Yes, how many years can some people exist before they're allowed to be free?",
-      "original": "Yes, how many years can a mountain exist before it's washed to the sea? Yes, how many years can some people exist before they're allowed to be free?",
-      "translation": "是的，一座山能存在多少年才会被冲刷到海里？是的，一些人能存在多少年才能获得自由？",
-      "phonetic": "[jɛs, haʊ ˈmɛni jɪərz kæn ə ˈmaʊntən ɪɡˈzɪst bɪˈfɔːr ɪts wɒʃt tə ðə siː? jɛs, haʊ ˈmɛni jɪərz kæn sʌm ˈpiːpl ɪɡˈzɪst bɪˈfɔːr ðeər əˈlaʊd tə biː friː?]"
-    },
-    {
-      "sentence": "Yes, how many times can a man turn his head pretending he just doesn't see?",
-      "original": "Yes, how many times can a man turn his head pretending he just doesn't see?",
-      "translation": "是的，一个人能转多少次头假装看不见？",
-      "phonetic": "[jɛs, haʊ ˈmɛni taɪmz kæn ə mæn tɜːrn hɪz hɛd prɪˈtɛndɪŋ hi dʒʌst ˈdʌznt siː?]"
-    },
-    {
-      "sentence": "The answer my friend is blowin' in the wind, the answer is blowin' in the wind.",
-      "original": "The answer my friend is blowin' in the wind, the answer is blowin' in the wind.",
-      "translation": "答案，我的朋友，就在风中飘荡，答案就在风中飘荡。",
-      "phonetic": "[ði ˈænsər maɪ frɛnd ɪz ˈbloʊɪn ɪn ðə wɪnd, ði ˈænsər ɪz ˈbloʊɪn ɪn ðə wɪnd.]"
-    },
-    {
-      "sentence": "Yes, how many times must a man look up before he can really see the sky? Yes, how many ears must one man have before he can hear people cry?",
-      "original": "Yes, how many times must a man look up before he can really see the sky? Yes, how many ears must one man have before he can hear people cry?",
-      "translation": "是的，一个人要抬多少次头才能真正看到天空？是的，一个人要有多少只耳朵才能听见人们的哭声？",
-      "phonetic": "[jɛs, haʊ ˈmɛni taɪmz mʌst ə mæn lʊk ʌp bɪˈfɔːr hi kæn ˈrɪəli siː ðə skaɪ? jɛs, haʊ ˈmɛni ɪərz mʌst wʌn mæn hæv bɪˈfɔːr hi kæn hɪr ˈpiːpl kraɪ?]"
+      "sentence": "Yes, how many times can a man turn his head pretending he just doesn't see? Yes, how many times must a man look up before he can really see the sky? Yes, how many ears must one man have before he can hear people cry?",
+      "original": "Yes, how many times can a man turn his head pretending he just doesn't see? Yes, how many times must a man look up before he can really see the sky? Yes, how many ears must one man have before he can hear people cry?",
+      "translation": "是的，一个人能转多少次头假装看不见？是的，一个人要抬多少次头才能真正看到天空？是的，一个人要有多少只耳朵才能听见人们的哭声？",
+      "phonetic": "[jɛs, haʊ ˈmɛni taɪmz kæn ə mæn tɜːrn hɪz hɛd prɪˈtɛndɪŋ hi dʒʌst ˈdʌznt siː? jɛs, haʊ ˈmɛni taɪmz mʌst ə mæn lʊk ʌp bɪˈfɔːr hi kæn ˈrɪəli siː ðə skaɪ? jɛs, haʊ ˈmɛni ɪərz mʌst wʌn mæn hæv bɪˈfɔːr hi kæn hɪr ˈpiːpl kraɪ?]"
     },
     {
       "sentence": "Yes, how many deaths will it take till he knows that too many people have died? The answer my friend is blowin' in the wind, the answer is blowin' in the wind.",
@@ -69,6 +45,7 @@ const list = [
       "phonetic": "[jɛs, haʊ ˈmɛni dɛθs wɪl ɪt teɪk tɪl hi noʊz ðæt tuː ˈmɛni ˈpiːpl hæv daɪd? ði ˈænsər maɪ frɛnd ɪz ˈbloʊɪn ɪn ðə wɪnd, ði ˈænsər ɪz ˈbloʊɪn ɪn ðə wɪnd.]"
     }
   ]
+  
   
 
   export default list.concat(list2)
