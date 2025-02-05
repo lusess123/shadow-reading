@@ -18,6 +18,7 @@ import TakeMe from './source/takeme'
 import Silent from './source/silent'
 import bz2 from './source/bz2'
 import m500m from './source/500m'
+import bz3 from './source/bz3'
 
 const textes : Record<string, typeof sentences>   = {
     'co' : sentences,
@@ -32,7 +33,8 @@ const textes : Record<string, typeof sentences>   = {
     "彼得潘" : Peter,
     "吻别" : TakeMe,
     "寂静之声" : Silent,
-    "500米在风中" : m500m
+    "500米在风中" : m500m,
+    "脑洞部长3" : bz3,
 } 
 
 // let preventSleepInterval: any = null;
