@@ -9,11 +9,11 @@ RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
 
 # 创建和激活虚拟环境，并安装 Python 依赖
 RUN python3 -m venv venv && \
-    ./venv/bin/pip install --upgrade pip && \
-    ./venv/bin/pip install edge-tts
+    ./venv/bin/pip install --upgrade --no-cache-dir -i https://pypi.tuna.tsinghua.edu.cn/simple  pip && \
+    ./venv/bin/pip install --no-cache-dir -i https://pypi.tuna.tsinghua.edu.cn/simple  edge-tts 
 
 # 构建阶段
-FROM node:20-alpine AS build
+FROM python AS build
 WORKDIR /app
 
 # 复制 package.json 和 package-lock.json
@@ -31,7 +31,7 @@ COPY . .
 RUN npm run build
 
 # 最终阶段
-FROM python AS final
+FROM build AS final
 WORKDIR /app
 
 # 复制构建阶段生成的文件
