@@ -118,4 +118,68 @@ const list2 = [
   }
 ]
 
-export  default list1.concat(list2);
+const list3 = [
+  {
+    "sentence": "Interesting! Could you tell me more about your <span style=\"color:red;\">f</span>avorite genres of games or series?",
+    "original": "Interesting! Could you tell me more about your favorite genres of games or series?",
+    "translation": "很有趣！你能详细说说你最喜欢的游戏或剧集类型吗？",
+    "phonetic": "[ˈɪntrəstɪŋ! kʊd ju tɛl mi mɔːr əˈbaʊt jʊər ˈfeɪvərɪt ˈʒɑːnrəz əv ɡeɪmz ɔː ˈsɪəriːz?]"
+  },
+  {
+    "sentence": "My interest in <span style=\"color:red;\">f</span>avorite genres has definitely evolved over the years.",
+    "original": "My interest in favorite genres has definitely evolved over the years.",
+    "translation": "我对喜欢的类型这些年的确有所变化。",
+    "phonetic": "[maɪ ˈɪntrəst ɪn ˈfeɪvərɪt ˈʒɑːnrəz hæz ˈdɛfɪnətli ɪˈvɒlvd ˈoʊvər ðə jɪərz.]"
+  },
+  {
+    "sentence": "Do you have any memorable <span style=\"color:red;\">e</span>xperiences related to multiplayer games?",
+    "original": "Do you have any memorable experiences related to multiplayer games?",
+    "translation": "你有过任何与多人游戏相关的难忘经历吗？",
+    "phonetic": "[du ju hæv ˈɛni ˈmɛmərəbəl ɪkˈspɪəriənsɪz rɪˈleɪtɪd tə ˌmʌltiˈpleɪər ɡeɪmz?]"
+  },
+  {
+    "sentence": "I recall one <span style=\"color:red;\">t</span>ime when our team won—it was pretty memorable.",
+    "original": "I recall one time when our team won—it was pretty memorable.",
+    "translation": "我记得有一次我们队赢了，那真的很难忘。",
+    "phonetic": "[aɪ rɪˈkɔːl wʌn taɪm wɛn aʊər tiːm wʌn—ɪt wəz ˈprɪti ˈmɛmərəbəl.]"
+  },
+  {
+    "sentence": "Have your thoughts about <span style=\"color:red;\">v</span>irtual reality gaming changed recently?",
+    "original": "Have your thoughts about virtual reality gaming changed recently?",
+    "translation": "你最近对虚拟现实游戏的看法有所改变吗？",
+    "phonetic": "[hæv jʊər θɔːts əˈbaʊt ˈvɜːrtʃuəl riˈæləti ˈɡeɪmɪŋ ʧeɪnʤd ˈriːsntli?]"
+  },
+  {
+    "sentence": "Well, my perspective on VR gaming has <span style=\"color:red;\">d</span>efinitely evolved recently.",
+    "original": "Well, my perspective on VR gaming has definitely evolved recently.",
+    "translation": "是的，我对VR游戏的看法最近肯定有了变化。",
+    "phonetic": "[wɛl, maɪ pərˈspɛktɪv ɒn viː ɑːr ˈɡeɪmɪŋ hæz ˈdɛfɪnətli ɪˈvɒlvd ˈriːsntli.]"
+  },
+  {
+    "sentence": "What usually influences your <span style=\"color:red;\">p</span>reference for PC or console gaming?",
+    "original": "What usually influences your preference for PC or console gaming?",
+    "translation": "通常是什么影响了你对PC或主机游戏的偏好呢？",
+    "phonetic": "[wɑːt ˈjuːʒuəli ˈɪnfluənsɪz jʊər ˈprɛfərəns fər piːˈsiː ɔːr ˈkɒnsoʊl ˈɡeɪmɪŋ?]"
+  },
+  {
+    "sentence": "Usually, it depends on what my friends are <span style=\"color:red;\">p</span>laying.",
+    "original": "Usually, it depends on what my friends are playing.",
+    "translation": "通常取决于我朋友们在玩什么。",
+    "phonetic": "[ˈjuːʒuəli, ɪt dɪˈpɛndz ɒn wɑːt maɪ frɛndz ɑːr ˈpleɪɪŋ.]"
+  },
+  {
+    "sentence": "Do you have an interest in <span style=\"color:red;\">e</span>sports or competitive gaming?",
+    "original": "Do you have an interest in esports or competitive gaming?",
+    "translation": "你对电竞或竞技游戏感兴趣吗？",
+    "phonetic": "[du ju hæv ən ˈɪntrəst ɪn ˈiːˌspɔːts ɔːr kəmˈpɛtɪtɪv ˈɡeɪmɪŋ?]"
+  },
+  {
+    "sentence": "Yeah, I've become more <span style=\"color:red;\">i</span>nterested in watching competitive matches lately.",
+    "original": "Yeah, I've become more interested in watching competitive matches lately.",
+    "translation": "是的，我最近对观看竞技比赛更感兴趣了。",
+    "phonetic": "[jɛə, aɪv bɪˈkʌm mɔːr ˈɪntrɪstɪd ɪn ˈwɒʧɪŋ kəmˈpɛtɪtɪv ˈmæʧɪz ˈleɪtli.]"
+  }
+]
+
+
+export  default list1.concat(list2).concat(list3);
