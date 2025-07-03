@@ -151,7 +151,7 @@ const s3 =[
   }
 ]
 
-cost s3 = [
+const s4 = [
   {
     "sentence": "So, once you got it, where exactly did you put your Labubu figure?",
     "original": "So, once you got it, where exactly did you put your Labubu figure?",
@@ -189,6 +189,6 @@ cost s3 = [
     "phonetic": "[ˈɔːlmoʊst ˈɛvri deɪ! ɪts ɪn ə ˈvɛri ˈvɪzəbəl spɑːt, ənd aɪ ˈɔːlweɪz ɡlæns æt ɪt wɛn rɪˈlæksɪŋ ɔːr wɛn frɛndz kʌm ˈoʊvər.]"
   }
 ]
-
-export default [...s1, ...s2, ...s3]
+const list = [...s1, ...s2, ...s3, ...s4]
+export default list
 
