@@ -22,6 +22,7 @@ import bz3 from './source/bz3'
 import bz4 from './source/bz4'
 import interview from './source/interview'
 import labubu from './source/labubu'
+import Iphone from './source/iphone'
 
 const textes : Record<string, typeof sentences>   = {
     'co' : sentences,
@@ -40,7 +41,8 @@ const textes : Record<string, typeof sentences>   = {
     "脑洞部长3" : bz3,
     "脑洞部长4" : bz4,
     "访谈" : interview,
-    "labubu" : labubu
+    "labubu" : labubu,
+    "iphone": Iphone
 } 
 
 // let preventSleepInterval: any = null;
