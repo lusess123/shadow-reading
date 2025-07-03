@@ -21,6 +21,7 @@ import m500m from './source/500m'
 import bz3 from './source/bz3'
 import bz4 from './source/bz4'
 import interview from './source/interview'
+import labubu from './source/labubu'
 
 const textes : Record<string, typeof sentences>   = {
     'co' : sentences,
@@ -38,7 +39,8 @@ const textes : Record<string, typeof sentences>   = {
     "500米在风中" : m500m,
     "脑洞部长3" : bz3,
     "脑洞部长4" : bz4,
-    "访谈" : interview
+    "访谈" : interview,
+    "labubu" : labubu
 } 
 
 // let preventSleepInterval: any = null;
