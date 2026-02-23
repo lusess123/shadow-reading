@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>系统访问控制现状</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: #0f0f1a;
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 40px 20px;
+  }
+
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  /* Header */
+  .header {
+    text-align: center;
+    margin-bottom: 48px;
+    position: relative;
+  }
+
+  .header-icon {
+    font-size: 56px;
+    margin-bottom: 12px;
+    display: block;
+    animation: pulse 2s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+  }
+
+  .header h1 {
+    font-size: 32px;
+    font-weight: 900;
+    background: linear-gradient(135deg, #ff6b6b, #ffa500);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: 2px;
+  }
+
+  .header p {
+    color: #888;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+
+  /* Risk Cards */
+  .risk-card {
+    background: #1a1a2e;
+    border-radius: 16px;
+    padding: 32px;
+    margin-bottom: 24px;
+    border-left: 5px solid;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.15s ease;
+  }
+
+  .risk-card:hover {
+    transform: translateX(4px);
+  }
+
+  .risk-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    opacity: 0.03;
+    pointer-events: none;
+  }
+
+  .risk-card:nth-child(1) { border-color: #ff6b6b; }
+  .risk-card:nth-child(1)::before { background: #ff6b6b; }
+  .risk-card:nth-child(2) { border-color: #ffa500; }
+  .risk-card:nth-child(2)::before { background: #ffa500; }
+  .risk-card:nth-child(3) { border-color: #ff4757; }
+  .risk-card:nth-child(3)::before { background: #ff4757; }
+
+  .card-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 20px;
+  }
+
+  .card-icon {
+    font-size: 42px;
+    line-height: 1;
+  }
+
+  .card-title-group {
+    flex: 1;
+  }
+
+  .card-number {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #666;
+    margin-bottom: 2px;
+  }
+
+  .card-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+  }
+
+  .severity-badge {
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+  .severity-high {
+    background: rgba(255, 71, 87, 0.15);
+    color: #ff4757;
+    border: 1px solid rgba(255, 71, 87, 0.3);
+  }
+
+  .severity-medium {
+    background: rgba(255, 165, 0, 0.15);
+    color: #ffa500;
+    border: 1px solid rgba(255, 165, 0, 0.3);
+  }
+
+  /* Flow visualization */
+  .flow {
+    display: flex;
+    align-items: stretch;
+    gap: 0;
+    margin: 16px 0;
+  }
+
+  .flow-step {
+    flex: 1;
+    text-align: center;
+    padding: 16px 12px;
+    position: relative;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 10px;
+  }
+
+  .flow-step:not(:last-child)::after {
+    content: '→';
+    position: absolute;
+    right: -14px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 22px;
+    color: #555;
+    z-index: 1;
+  }
+
+  .flow-step:not(:last-child) {
+    margin-right: 24px;
+  }
+
+  .flow-emoji {
+    font-size: 36px;
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  .flow-label {
+    font-size: 13px;
+    color: #aaa;
+    line-height: 1.5;
+  }
+
+  .flow-label strong {
+    color: #fff;
+    display: block;
+    font-size: 14px;
+    margin-bottom: 2px;
+  }
+
+  /* Problem list */
+  .problems {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 18px;
+  }
+
+  .problem-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 500;
+    background: rgba(255, 71, 87, 0.08);
+    border: 1px solid rgba(255, 71, 87, 0.15);
+    color: #ff8a8a;
+  }
+
+  .problem-tag .tag-icon {
+    font-size: 16px;
+  }
+
+  /* Result callout */
+  .result {
+    margin-top: 18px;
+    padding: 14px 18px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  .result-danger {
+    background: rgba(255, 71, 87, 0.1);
+    border: 1px solid rgba(255, 71, 87, 0.2);
+    color: #ff6b6b;
+  }
+
+  .result-warn {
+    background: rgba(255, 165, 0, 0.1);
+    border: 1px solid rgba(255, 165, 0, 0.2);
+    color: #ffa500;
+  }
+
+  .result-emoji {
+    font-size: 24px;
+  }
+
+  /* Summary footer */
+  .summary {
+    margin-top: 40px;
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    border-radius: 16px;
+    padding: 28px 32px;
+    text-align: center;
+    border: 1px solid #2a2a4a;
+  }
+
+  .summary-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 16px;
+  }
+
+  .summary-stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .stat {
+    text-align: center;
+  }
+
+  .stat-icon {
+    font-size: 32px;
+    display: block;
+    margin-bottom: 6px;
+  }
+
+  .stat-value {
+    font-size: 28px;
+    font-weight: 900;
+    color: #ff4757;
+  }
+
+  .stat-label {
+    font-size: 12px;
+    color: #888;
+    margin-top: 2px;
+  }
+
+  /* Divider */
+  .divider {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 8px 0 8px 0;
+  }
+  .divider::before, .divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #2a2a4a;
+  }
+  .divider span {
+    color: #555;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- Header -->
+  <div class="header">
+    <span class="header-icon">🛡️</span>
+    <h1>⚠️ 系统访问控制现状</h1>
+    <p>以下是当前系统中已知的安全风险点</p>
+  </div>
+
+  <!-- Risk 1 -->
+  <div class="risk-card">
+    <div class="card-header">
+      <span class="card-icon">🔗</span>
+      <div class="card-title-group">
+        <div class="card-number">风险 #1</div>
+        <div class="card-title">招募分享页面</div>
+      </div>
+      <span class="severity-badge severity-high">🔴 高风险</span>
+    </div>
+
+    <div class="flow">
+      <div class="flow-step">
+        <span class="flow-emoji">🌍</span>
+        <div class="flow-label">
+          <strong>任何人</strong>
+          无需登录 · 无需身份
+        </div>
+      </div>
+      <div class="flow-step">
+        <span class="flow-emoji">🔗</span>
+        <div class="flow-label">
+          <strong>获取链接</strong>
+          匿名即可访问
+        </div>
+      </div>
+      <div class="flow-step">
+        <span class="flow-emoji">♾️</span>
+        <div class="flow-label">
+          <strong>永久有效</strong>
+          没有截止时间
+        </div>
+      </div>
+    </div>
+
+    <div class="problems">
+      <span class="problem-tag"><span class="tag-icon">🚫</span> 无需登录</span>
+      <span class="problem-tag"><span class="tag-icon">👻</span> 允许匿名</span>
+      <span class="problem-tag"><span class="tag-icon">⏰</span> 无截止时间</span>
+      <span class="problem-tag"><span class="tag-icon">🔓</span> 无访问限制</span>
+    </div>
+
+    <div class="result result-danger">
+      <span class="result-emoji">💥</span>
+      任何人拿到链接，就可以永久访问招募页面
+    </div>
+  </div>
+
+  <!-- Risk 2 -->
+  <div class="risk-card">
+    <div class="card-header">
+      <span class="card-icon">👁️</span>
+      <div class="card-title-group">
+        <div class="card-number">风险 #2</div>
+        <div class="card-title">Study 预览页面</div>
+      </div>
+      <span class="severity-badge severity-high">🔴 高风险</span>
+    </div>
+
+    <div class="flow">
+      <div class="flow-step">
+        <span class="flow-emoji">👤</span>
+        <div class="flow-label">
+          <strong>任何登录用户</strong>
+          不限组织 · 不限角色
+        </div>
+      </div>
+      <div class="flow-step">
+        <span class="flow-emoji">📄</span>
+        <div class="flow-label">
+          <strong>访问URL</strong>
+          复用了访谈页面
+        </div>
+      </div>
+      <div class="flow-step">
+        <span class="flow-emoji">🙈</span>
+        <div class="flow-label">
+          <strong>未发布内容</strong>
+          直接可见
+        </div>
+      </div>
+    </div>
+
+    <div class="problems">
+      <span class="problem-tag"><span class="tag-icon">🏗️</span> 无专门预览页</span>
+      <span class="problem-tag"><span class="tag-icon">🔄</span> 复用访谈页面</span>
+      <span class="problem-tag"><span class="tag-icon">🏢</span> 无组织隔离</span>
+      <span class="problem-tag"><span class="tag-icon">📋</span> 无白名单</span>
+    </div>
+
+    <div class="result result-danger">
+      <span class="result-emoji">💥</span>
+      任何登录用户都能看到未发布的 Study 内容
+    </div>
+  </div>
+
+  <!-- Risk 3 -->
+  <div class="risk-card">
+    <div class="card-header">
+      <span class="card-icon">🚪</span>
+      <div class="card-title-group">
+        <div class="card-number">风险 #3</div>
+        <div class="card-title">非招募页面</div>
+      </div>
+      <span class="severity-badge severity-medium">🟠 中高风险</span>
+    </div>
+
+    <div class="flow">
+      <div class="flow-step">
+        <span class="flow-emoji">👤</span>
+        <div class="flow-label">
+          <strong>任何登录用户</strong>
+          只需一个账号
+        </div>
+      </div>
+      <div class="flow-step">
+        <span class="flow-emoji">🚪</span>
+        <div class="flow-label">
+          <strong>直接访问</strong>
+          无权限拦截
+        </div>
+      </div>
+      <div class="flow-step">
+        <span class="flow-emoji">📂</span>
+        <div class="flow-label">
+          <strong>所有页面</strong>
+          无限期开放
+        </div>
+      </div>
+    </div>
+
+    <div class="problems">
+      <span class="problem-tag"><span class="tag-icon">✅</span> 仅校验登录</span>
+      <span class="problem-tag"><span class="tag-icon">🚫</span> 无角色控制</span>
+      <span class="problem-tag"><span class="tag-icon">⏰</span> 无有效期</span>
+      <span class="problem-tag"><span class="tag-icon">🔑</span> 无权限分级</span>
+    </div>
+
+    <div class="result result-warn">
+      <span class="result-emoji">⚡</span>
+      任何登录用户可以无限期访问所有内部页面
+    </div>
+  </div>
+
+  <!-- Summary -->
+  <div class="summary">
+    <div class="summary-title">📊 风险概览</div>
+    <div class="summary-stats">
+      <div class="stat">
+        <span class="stat-icon">🔥</span>
+        <div class="stat-value">3</div>
+        <div class="stat-label">风险页面类型</div>
+      </div>
+      <div class="stat">
+        <span class="stat-icon">🚨</span>
+        <div class="stat-value">2</div>
+        <div class="stat-label">高风险</div>
+      </div>
+      <div class="stat">
+        <span class="stat-icon">⚠️</span>
+        <div class="stat-value">1</div>
+        <div class="stat-label">中高风险</div>
+      </div>
+      <div class="stat">
+        <span class="stat-icon">🛡️</span>
+        <div class="stat-value">0</div>
+        <div class="stat-label">已防护</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

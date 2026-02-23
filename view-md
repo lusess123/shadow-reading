@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+if [ $# -lt 1 ]; then
+  echo "usage: ./view-md /absolute/path/to/file.md" >&2
+  exit 1
+fi
+
+path="$1"
+encoded=$(python3 - <<'PY' "$path"
+import sys
+from urllib.parse import quote
+print(quote(sys.argv[1]))
+PY
+)
+
+url="http://localhost:5173/view?path=${encoded}"
+
+if command -v open >/dev/null 2>&1; then
+  open "$url"
+elif command -v xdg-open >/dev/null 2>&1; then
+  xdg-open "$url"
+else
+  echo "open this URL in your browser: $url"
+fi

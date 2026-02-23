@@ -38,3 +38,4 @@ next-env.d.ts
 
 # AI local docs (vibe coding)
 .ai-local/
+.ai-doc/
