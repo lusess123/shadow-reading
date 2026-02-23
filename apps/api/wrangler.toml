@@ -1,0 +1,48 @@
+name = "shadow-reading-api"
+main = "src/index.ts"
+compatibility_date = "2024-11-01"
+compatibility_flags = ["nodejs_compat"]
+
+[ai]
+binding = "AI"
+
+[[r2_buckets]]
+binding = "AUDIO_CACHE"
+bucket_name = "shadow-reading-audio"
+
+[[r2_buckets]]
+binding = "DOCS"
+bucket_name = "shadow-reading-docs"
+
+[[r2_buckets]]
+binding = "COURSES"
+bucket_name = "shadow-reading-courses"
+
+# Cloudflare D1 数据库（用户账户 + 课程归属）
+[[d1_databases]]
+binding = "DB"
+database_name = "shadow-reading-db"
+database_id = "local-placeholder"
+
+# KV：邮箱验证码（TTL 10 分钟）
+[[kv_namespaces]]
+binding = "KV_VERIFY"
+id = "local-placeholder-verify"
+
+# KV：登录 Session（TTL 7 天）
+[[kv_namespaces]]
+binding = "KV_SESSIONS"
+id = "local-placeholder-sessions"
+
+[vars]
+# 生产环境替换为你的 Cloudflare Pages 域名，开发时设为 * 即可
+ALLOWED_ORIGIN = "*"
+# 生产环境通过 `wrangler secret put JWT_SECRET` 设置
+JWT_SECRET = "dev-secret-change-in-production"
+# Resend 邮件 API Key（https://resend.com），未配置时 console.log 验证码
+RESEND_API_KEY = ""
+# 发件邮箱（Resend 需要已验证的域名）
+EMAIL_FROM = "noreply@shadow-reading.app"
+
+[dev]
+port = 8787
