@@ -1,0 +1,732 @@
+{
+  "items": [
+    {
+      "id": "item_30600259e291",
+      "type": "agent_handoff",
+      "new_agent_id": "avatar_agent",
+      "created_at": 1767784387.0523572
+    },
+    {
+      "id": "item_65af5e9fa34f",
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        "Let's create the discussion guide.  Are you ready? Let's get started. "
+      ],
+      "interrupted": false,
+      "extra": {},
+      "metrics": {
+        "started_speaking_at": 1767784389.591853,
+        "stopped_speaking_at": 1767784393.1611288,
+        "tts_node_ttfb": 0.2508835180196911
+      },
+      "created_at": 1767784393.1612625
+    },
+    {
+      "id": "item_f14a5ddba2b0",
+      "type": "message",
+      "role": "user",
+      "content": [
+        "Okay. Let's talk about Chinese food.",
+        "(currently at topic index 1, 14.81min left for the interview)"
+      ],
+      "interrupted": false,
+      "transcript_confidence": 0.9995117,
+      "extra": {},
+      "metrics": {
+        "started_speaking_at": 1767784395.2192822,
+        "stopped_speaking_at": 1767784397.570284,
+        "transcription_delay": 0.270247220993042,
+        "end_of_turn_delay": 0.5633111000061035,
+        "on_user_turn_completed_delay": 1.6529811546206474e-06
+      },
+      "created_at": 1767784397.8405938
+    },
+    {
+      "id": "item_6bfdc894de3e",
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        "Great. What's the main goal for this study on Chinese food? "
+      ],
+      "interrupted": false,
+      "extra": {},
+      "metrics": {
+        "started_speaking_at": 1767784399.6365297,
+        "stopped_speaking_at": 1767784402.7456975,
+        "llm_node_ttft": 1.2923900349996984,
+        "tts_node_ttfb": 0.49884228804148734,
+        "e2e_latency": 2.0662457942962646
+      },
+      "created_at": 1767784398.139569
+    },
+    {
+      "id": "item_6ec1e4866433",
+      "type": "message",
+      "role": "user",
+      "content": [
+        "Mhmm. The main car is Chinese food that is about its",
+        "(currently at topic index 1, 14.58min left for the interview)"
+      ],
+      "interrupted": false,
+      "transcript_confidence": 0.72326661,
+      "extra": {},
+      "metrics": {
+        "started_speaking_at": 1767784405.3245094,
+        "stopped_speaking_at": 1767784411.1198273,
+        "transcription_delay": 0.3216102123260498,
+        "end_of_turn_delay": 0.6002733707427979,
+        "on_user_turn_completed_delay": 1.4450633898377419e-06
+      },
+      "created_at": 1767784411.4415143
+    },
+    {
+      "id": "item_2a1a483b7039",
+      "type": "message",
+      "role": "user",
+      "content": [
+        "price.",
+        "(currently at topic index 1, 14.55min left for the interview)"
+      ],
+      "interrupted": false,
+      "transcript_confidence": 0.9033203,
+      "extra": {},
+      "metrics": {
+        "started_speaking_at": 1767784412.4175029,
+        "stopped_speaking_at": 1767784412.772435,
+        "transcription_delay": 0.3169534206390381,
+        "end_of_turn_delay": 0.5791447162628174,
+        "on_user_turn_completed_delay": 1.4990800991654396e-06
+      },
+      "created_at": 1767784413.3516815
+    },
+    {
+      "id": "item_68777000f789",
+      "type": "message",
+      "role": "user",
+      "content": [
+        "Resource.",
+        "(currently at topic index 1, 14.52min left for the interview)"
+      ],
+      "interrupted": false,
+      "transcript_confidence": 0.7392578,
+      "extra": {},
+      "metrics": {
+        "started_speaking_at": 1767784413.9739966,
+        "stopped_speaking_at": 1767784414.640686,
+        "transcription_delay": 0.24992966651916504,
+        "end_of_turn_delay": 0.5642735958099365,
+        "on_user_turn_completed_delay": 1.8558930605649948e-06
+      },
+      "created_at": 1767784415.2050781
+    },
+    {
+      "id": "item_bdc2dcedf5c5",
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        "Got it. Sounds like you want to focus on price and maybe resources.  Quick check "
+      ],
+      "interrupted": false,
+      "extra": {},
+      "metrics": {
+        "started_speaking_at": 1767784417.3934233,
+        "stopped_speaking_at": 1767784421.809369,
+        "llm_node_ttft": 1.6135422670049593,
+        "tts_node_ttfb": 0.5729070020606741,
+        "e2e_latency": 2.752737283706665
+      },
+      "created_at": 1767784415.222891
+    },
+    {
+      "id": "item_129e354262cd",
+      "type": "message",
+      "role": "user",
+      "content": [
+        "Yes.",
+        "(currently at topic index 1, 14.35min left for the interview)"
+      ],
+      "interrupted": false,
+      "transcript_confidence": 0.90185547,
+      "extra": {},
+      "metrics": {
+        "started_speaking_at": 1767784424.7167153,
+        "stopped_speaking_at": 1767784424.8207664,
+        "transcription_delay": 0.4147212505340576,
+        "end_of_turn_delay": 0.5890884399414062,
+        "on_user_turn_completed_delay": 1.53400469571352e-06
+      },
+      "created_at": 1767784425.2356834
+    },
+    {
+      "id": "item_f7c8ce96ce13",
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        "Thanks. Who are the target participants for this study, like frequent diners, delivery app users, or restaurant owners? "
+      ],
+      "interrupted": false,
+      "extra": {},
+      "metrics": {
+        "started_speaking_at": 1767784427.7049682,
+        "stopped_speaking_at": 1767784434.1648972,
+        "llm_node_ttft": 1.7729132989188656,
+        "tts_node_ttfb": 0.6891285149613395,
+        "e2e_latency": 2.884201765060425
+      },
+      "created_at": 1767784425.412407
+    },
+    {
+      "id": "item_f3afb19399f6",
+      "type": "message",
+      "role": "user",
+      "content": [
+        "And deliver app by users.",
+        "(currently at topic index 1, 14.12min left for the interview)"
+      ],
+      "interrupted": false,
+      "transcript_confidence": 0.51123047,
+      "extra": {},
+      "metrics": {
+        "started_speaking_at": 1767784437.073535,
+        "stopped_speaking_at": 1767784438.7717197,
+        "transcription_delay": 0.2188425064086914,
+        "end_of_turn_delay": 0.5397489070892334,
+        "on_user_turn_completed_delay": 2.286047674715519e-06
+      },
+      "created_at": 1767784438.9906306
+    },
+    {
+      "id": "item_0c0044ade087",
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        "Great. Which region are these delivery app users in, and how recent should their Chinese food ordering be?  For example, US last 3 months, or something else? "
+      ],
+      "interrupted": false,
+      "extra": {},
+      "metrics": {
+        "started_speaking_at": 1767784441.143962,
+        "stopped_speaking_at": 1767784450.000429,
+        "llm_node_ttft": 1.40396668901667,
+        "tts_node_ttfb": 0.7468178110430017,
+        "e2e_latency": 2.3722422122955322
+      },
+      "created_at": 1767784439.3206468
+    },
+    {
+      "id": "item_d477746d5c3a",
+      "type": "message",
+      "role": "user",
+      "content": [
+        "US last",
+        "(currently at topic index 1, 13.87min left for the interview)"
+      ],
+      "interrupted": false,
+      "transcript_confidence": 0.9633789,
+      "extra": {},
+      "metrics": {
+        "started_speaking_at": 1767784452.8730495,
+        "stopped_speaking_at": 1767784453.6211638,
+        "transcription_delay": 0.4134838581085205,
+        "end_of_turn_delay": 0.6223671436309814,
+        "on_user_turn_completed_delay": 1.943088136613369e-06
+      },
+      "created_at": 1767784454.034706
+    },
+    {
+      "id": "item_39fa3e8443b5",
+      "type": "message",
+      "role": "user",
+      "content": [
+        "three months.",
+        "(currently at topic index 1, 13.85min left for the interview)"
+      ],
+      "interrupted": false,
+      "transcript_confidence": 1.0,
+      "extra": {},
+      "metrics": {
+        "started_speaking_at": 1767784454.320074,
+        "stopped_speaking_at": 1767784455.0715296,
+        "transcription_delay": 0.26218247413635254,
+        "end_of_turn_delay": 0.5830483436584473,
+        "on_user_turn_completed_delay": 1.5569385141134262e-06
+      },
+      "created_at": 1767784455.6546957
+    },
+    {
+      "id": "item_3b94466cd88c",
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        "Perfect. Two quick things "
+      ],
+      "interrupted": false,
+      "extra": {},
+      "metrics": {
+        "started_speaking_at": 1767784456.5352674,
+        "stopped_speaking_at": 1767784458.2597005,
+        "llm_node_ttft": 0.6645429240306839,
+        "tts_node_ttfb": 0.21470377303194255,
+        "e2e_latency": 1.4637377262115479
+      },
+      "created_at": 1767784455.6726546
+    },
+    {
+      "id": "item_918c5dcd65ab",
+      "type": "message",
+      "role": "user",
+      "content": [
+        "What?",
+        "(currently at topic index 1, 13.68min left for the interview)"
+      ],
+      "interrupted": false,
+      "transcript_confidence": 0.7294922,
+      "extra": {},
+      "metrics": {
+        "started_speaking_at": 1767784464.8729875,
+        "stopped_speaking_at": 1767784465.1717775,
+        "transcription_delay": 0.20867133140563965,
+        "end_of_turn_delay": 0.5834667682647705,
+        "on_user_turn_completed_delay": 2.7209753170609474e-06
+      },
+      "created_at": 1767784465.3805282
+    },
+    {
+      "id": "item_1a515580f62a",
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        " Thanks. "
+      ],
+      "interrupted": false,
+      "extra": {},
+      "metrics": {
+        "started_speaking_at": 1767784466.272568,
+        "stopped_speaking_at": 1767784466.8740625,
+        "llm_node_ttft": 0.6881181289209053,
+        "tts_node_ttfb": 0.20156002801377326,
+        "e2e_latency": 1.1007905006408691
+      },
+      "created_at": 1767784465.7588708
+    },
+    {
+      "id": "item_5ddbf051416a",
+      "type": "message",
+      "role": "user",
+      "content": [
+        "What do you win?",
+        "(currently at topic index 1, 13.5min left for the interview)"
+      ],
+      "interrupted": false,
+      "transcript_confidence": 0.99902344,
+      "extra": {},
+      "metrics": {
+        "started_speaking_at": 1767784475.2748513,
+        "stopped_speaking_at": 1767784475.9193923,
+        "transcription_delay": 0.2630627155303955,
+        "end_of_turn_delay": 0.5598275661468506,
+        "on_user_turn_completed_delay": 1.969980075955391e-06
+      },
+      "created_at": 1767784476.1825643
+    },
+    {
+      "id": "item_3cc4f16615f9",
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        "Sorry, that cut out.  Two quick clarifiers "
+      ],
+      "interrupted": false,
+      "extra": {},
+      "metrics": {
+        "started_speaking_at": 1767784477.1385503,
+        "stopped_speaking_at": 1767784479.8292763,
+        "llm_node_ttft": 0.6514245030703023,
+        "tts_node_ttfb": 0.3000053509604186,
+        "e2e_latency": 1.2191579341888428
+      },
+      "created_at": 1767784476.483595
+    },
+    {
+      "id": "item_c79b0ddb7a64",
+      "type": "message",
+      "role": "user",
+      "content": [
+        "What's wrong?",
+        "(currently at topic index 1, 13.37min left for the interview)"
+      ],
+      "interrupted": false,
+      "transcript_confidence": 0.75683594,
+      "extra": {},
+      "metrics": {
+        "started_speaking_at": 1767784483.5737238,
+        "stopped_speaking_at": 1767784483.9707003,
+        "transcription_delay": 0.36139583587646484,
+        "end_of_turn_delay": 0.5737509727478027,
+        "on_user_turn_completed_delay": 1.55280577018857e-05
+      },
+      "created_at": 1767784484.3321545
+    },
+    {
+      "id": "item_557c3e4be217",
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        "All good. Two quick clarifiers "
+      ],
+      "interrupted": false,
+      "extra": {},
+      "metrics": {
+        "started_speaking_at": 1767784485.397118,
+        "stopped_speaking_at": 1767784487.9610503,
+        "llm_node_ttft": 0.6804335289634764,
+        "tts_node_ttfb": 0.3817894069943577,
+        "e2e_latency": 1.4264178276062012
+      },
+      "created_at": 1767784484.5510361
+    },
+    {
+      "id": "item_54a808b9f997",
+      "type": "message",
+      "role": "user",
+      "content": [
+        "I don't know.",
+        "(currently at topic index 1, 13.2min left for the interview)"
+      ],
+      "interrupted": false,
+      "transcript_confidence": 0.9880371,
+      "extra": {},
+      "metrics": {
+        "started_speaking_at": 1767784493.4716682,
+        "stopped_speaking_at": 1767784494.2194283,
+        "transcription_delay": 0.36968350410461426,
+        "end_of_turn_delay": 0.5871038436889648,
+        "on_user_turn_completed_delay": 2.2579915821552277e-06
+      },
+      "created_at": 1767784494.5891676
+    },
+    {
+      "id": "item_2c2e60cdbf71",
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        "No worries. "
+      ],
+      "interrupted": false,
+      "extra": {},
+      "metrics": {
+        "started_speaking_at": 1767784495.3937507,
+        "stopped_speaking_at": 1767784496.2823527,
+        "llm_node_ttft": 0.5880967649864033,
+        "tts_node_ttfb": 0.2144629870308563,
+        "e2e_latency": 1.1743223667144775
+      },
+      "created_at": 1767784494.8128173
+    },
+    {
+      "id": "item_61cb38eb6e03",
+      "type": "message",
+      "role": "user",
+      "content": [
+        "I don't know what you're saying.",
+        "(currently at topic index 1, 12.99min left for the interview)"
+      ],
+      "interrupted": false,
+      "transcript_confidence": 0.99609375,
+      "extra": {},
+      "metrics": {
+        "started_speaking_at": 1767784505.8198993,
+        "stopped_speaking_at": 1767784506.971346,
+        "transcription_delay": 0.3273890018463135,
+        "end_of_turn_delay": 0.5793724060058594,
+        "on_user_turn_completed_delay": 1.852051354944706e-06
+      },
+      "created_at": 1767784507.2988029
+    },
+    {
+      "id": "item_57d0f7c95817",
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        "Sorry about that. Let me ask two simple questions. "
+      ],
+      "interrupted": false,
+      "extra": {},
+      "metrics": {
+        "started_speaking_at": 1767784508.5227847,
+        "stopped_speaking_at": 1767784511.273823,
+        "llm_node_ttft": 0.7708010609494522,
+        "tts_node_ttfb": 0.44965498696547,
+        "e2e_latency": 1.551438808441162
+      },
+      "created_at": 1767784507.5535493
+    },
+    {
+      "id": "item_a2974bcd6ba1",
+      "type": "message",
+      "role": "user",
+      "content": [
+        "Okay.",
+        "(currently at topic index 1, 12.86min left for the interview)"
+      ],
+      "interrupted": false,
+      "transcript_confidence": 0.97094727,
+      "extra": {},
+      "metrics": {
+        "started_speaking_at": 1767784514.1166854,
+        "stopped_speaking_at": 1767784514.4171712,
+        "transcription_delay": 0.27271032333374023,
+        "end_of_turn_delay": 0.5827224254608154,
+        "on_user_turn_completed_delay": 2.226908691227436e-06
+      },
+      "created_at": 1767784514.6899545
+    },
+    {
+      "id": "item_4ce874f8f2d0",
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        "What's the main objective: understand how price affects choosing Chinese food on delivery apps, or compare prices across restaurants, or something else? "
+      ],
+      "interrupted": false,
+      "extra": {},
+      "metrics": {
+        "started_speaking_at": 1767784516.4599001,
+        "stopped_speaking_at": 1767784524.7149942,
+        "llm_node_ttft": 0.7683920039562508,
+        "tts_node_ttfb": 0.9990917579270899,
+        "e2e_latency": 2.042728900909424
+      },
+      "created_at": 1767784515.0034242
+    },
+    {
+      "id": "item_b5d38d5f58f4",
+      "type": "message",
+      "role": "user",
+      "content": [
+        "Uh, compare price across response.",
+        "(currently at topic index 1, 12.62min left for the interview)"
+      ],
+      "interrupted": false,
+      "transcript_confidence": 0.96240234,
+      "extra": {},
+      "metrics": {
+        "started_speaking_at": 1767784527.1699405,
+        "stopped_speaking_at": 1767784529.220376,
+        "transcription_delay": 0.21863532066345215,
+        "end_of_turn_delay": 0.5902554988861084,
+        "on_user_turn_completed_delay": 1.3719545677304268e-06
+      },
+      "created_at": 1767784529.4391758
+    },
+    {
+      "id": "item_73d2426de588",
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        "Got it. Compare prices across restaurants on delivery apps. "
+      ],
+      "interrupted": false,
+      "extra": {},
+      "metrics": {
+        "started_speaking_at": 1767784530.6148183,
+        "stopped_speaking_at": 1767784534.0112731,
+        "llm_node_ttft": 0.8011731310980394,
+        "tts_node_ttfb": 0.37251240492332727,
+        "e2e_latency": 1.3944423198699951
+      },
+      "created_at": 1767784529.813822
+    },
+    {
+      "id": "item_426d3ae48f89",
+      "type": "message",
+      "role": "user",
+      "content": [
+        "Yes.",
+        "(currently at topic index 1, 12.47min left for the interview)"
+      ],
+      "interrupted": false,
+      "transcript_confidence": 0.8952637,
+      "extra": {},
+      "metrics": {
+        "started_speaking_at": 1767784537.682049,
+        "stopped_speaking_at": 1767784537.9198885,
+        "transcription_delay": 0.3607790470123291,
+        "end_of_turn_delay": 0.5897033214569092,
+        "on_user_turn_completed_delay": 2.79303640127182e-06
+      },
+      "created_at": 1767784538.2807622
+    },
+    {
+      "id": "item_272b38e2c313",
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        "Great. Which apps should we focus on, like DoorDash, Uber Eats, Grubhub, or any? "
+      ],
+      "interrupted": false,
+      "extra": {},
+      "metrics": {
+        "started_speaking_at": 1767784539.7772124,
+        "stopped_speaking_at": 1767784544.6103883,
+        "llm_node_ttft": 0.8913238110253587,
+        "tts_node_ttfb": 0.6021318309940398,
+        "e2e_latency": 1.8573238849639893
+      },
+      "created_at": 1767784538.5125356
+    },
+    {
+      "id": "item_24cee93ce1a8",
+      "type": "message",
+      "role": "user",
+      "content": [
+        "Uh, Uber is what I've had",
+        "(currently at topic index 1, 12.28min left for the interview)"
+      ],
+      "interrupted": false,
+      "transcript_confidence": 0.795166,
+      "extra": {},
+      "metrics": {
+        "started_speaking_at": 1767784547.0712276,
+        "stopped_speaking_at": 1767784549.5188286,
+        "transcription_delay": 0.2700810432434082,
+        "end_of_turn_delay": 0.5409214496612549,
+        "on_user_turn_completed_delay": 1.335982233285904e-06
+      },
+      "created_at": 1767784549.7890227
+    },
+    {
+      "id": "item_d9346f08535c",
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        "Thanks. Two quick items "
+      ],
+      "interrupted": false,
+      "extra": {},
+      "metrics": {
+        "started_speaking_at": 1767784550.6787665,
+        "stopped_speaking_at": 1767784552.2480016,
+        "llm_node_ttft": 0.6254257049877197,
+        "tts_node_ttfb": 0.2616313670296222,
+        "e2e_latency": 1.159937858581543
+      },
+      "created_at": 1767784550.0628588
+    },
+    {
+      "id": "item_93487cad8bfa",
+      "type": "message",
+      "role": "user",
+      "content": [
+        "What's wrong?",
+        "(currently at topic index 1, 12.15min left for the interview)"
+      ],
+      "interrupted": false,
+      "transcript_confidence": 0.9941406,
+      "extra": {},
+      "metrics": {
+        "started_speaking_at": 1767784556.3194153,
+        "stopped_speaking_at": 1767784557.119857,
+        "transcription_delay": 0.2702364921569824,
+        "end_of_turn_delay": 0.5932199954986572,
+        "on_user_turn_completed_delay": 1.8960563465952873e-06
+      },
+      "created_at": 1767784557.3901896
+    },
+    {
+      "id": "item_7b5e1deb8a14",
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        "All good. Two"
+      ],
+      "interrupted": true,
+      "extra": {},
+      "metrics": {
+        "started_speaking_at": 1767784558.2968159,
+        "stopped_speaking_at": 1767784559.495759,
+        "llm_node_ttft": 0.5924259920138866,
+        "tts_node_ttfb": 0.31099575804546475,
+        "e2e_latency": 1.1769587993621826
+      },
+      "created_at": 1767784557.715633
+    },
+    {
+      "id": "item_840c24390ebd",
+      "type": "message",
+      "role": "user",
+      "content": [
+        "What do you mean?",
+        "(currently at topic index 1, 12.11min left for the interview)"
+      ],
+      "interrupted": false,
+      "transcript_confidence": 1.0,
+      "extra": {},
+      "metrics": {
+        "started_speaking_at": 1767784558.6698928,
+        "stopped_speaking_at": 1767784559.1738884,
+        "transcription_delay": 0.3206024169921875,
+        "end_of_turn_delay": 0.5829172134399414,
+        "on_user_turn_completed_delay": 1.938082277774811e-06
+      },
+      "created_at": 1767784559.7569506
+    },
+    {
+      "id": "item_30b0f2368eaa",
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        "Got it. Two quick questions "
+      ],
+      "interrupted": false,
+      "extra": {},
+      "metrics": {
+        "started_speaking_at": 1767784562.1549253,
+        "stopped_speaking_at": 1767784563.8277712,
+        "llm_node_ttft": 1.6085655259666964,
+        "tts_node_ttfb": 0.7834152029827237,
+        "e2e_latency": 2.981036901473999
+      },
+      "created_at": 1767784559.799837
+    },
+    {
+      "id": "item_165bd1417c57",
+      "type": "message",
+      "role": "user",
+      "content": [
+        "What's the questions?",
+        "(currently at topic index 1, 11.98min left for the interview)"
+      ],
+      "interrupted": false,
+      "transcript_confidence": 0.8366699,
+      "extra": {},
+      "metrics": {
+        "started_speaking_at": 1767784566.468382,
+        "stopped_speaking_at": 1767784567.4711292,
+        "transcription_delay": 0.1676325798034668,
+        "end_of_turn_delay": 0.5624334812164307,
+        "on_user_turn_completed_delay": 1.7760321497917175e-06
+      },
+      "created_at": 1767784567.6388245
+    },
+    {
+      "id": "item_02cf9149a92f",
+      "type": "message",
+      "role": "assistant",
+      "content": [
+        " Thanks. "
+      ],
+      "interrupted": false,
+      "extra": {},
+      "metrics": {
+        "started_speaking_at": 1767784568.6422894,
+        "stopped_speaking_at": 1767784569.2953792,
+        "llm_node_ttft": 0.7168367170961574,
+        "tts_node_ttfb": 0.283016393892467,
+        "e2e_latency": 1.1711602210998535
+      },
+      "created_at": 1767784568.0399783
+    }
+  ]
+}
