@@ -38,7 +38,6 @@ next-env.d.ts
 
 # AI local docs (vibe coding)
 .ai-local/
-.ai-doc/
 apps/api/.wrangler/state/v3/d1/miniflare-D1DatabaseObject/f986e93606f91806f8fa1021d87eeffcf499bc71fa7e758eb255ef3b3c25f140.sqlite
 apps/api/.wrangler/state/v3/kv/local-placeholder-verify/blobs/70a51fca7666d3371417ad376f0592f0b9f7284ba29058b3d66a24dfb25da6b40000019c8aee92b4
 apps/api/.wrangler/state/v3/kv/miniflare-KVNamespaceObject/ef5848849225c305361136ba804cc4aec88cede056c9d9015f22c46cb035e580.sqlite
